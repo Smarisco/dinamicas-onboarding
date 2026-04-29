@@ -1,0 +1,159 @@
+# ═══════════════════════════════════════════════════════
+# params.yaml — DIN-AGIL-001 — Jogo das Bolinhas
+# Seções RAS: Classification + Usage
+# Especificação: OMG RAS v2.2 (formal/2005-11-02)
+# ═══════════════════════════════════════════════════════
+
+# ── IDENTIFICATION ──────────────────────────────────────
+asset_id: DIN-AGIL-001
+name: "Jogo das Bolinhas (Ballpoint Game)"
+version: "1.0.0"
+status: aprovado
+created_at: "2025-01-01"
+updated_at: "2026-04-28"
+
+# ── CLASSIFICATION ──────────────────────────────────────
+classification:
+  domain:
+    - "Engenharia de Software"
+    - "Gestão Ágil"
+    - "Scrum"
+    - "Lean"
+    - "Melhoria Contínua"
+  tags:
+    - Scrum
+    - Lean
+    - Velocity
+    - "Melhoria Contínua"
+    - Gamification
+    - Simulação
+
+  # Eixo 1 — Habilidades
+  hard_skills:
+    - "Estimativa (Velocity)"
+    - "Pensamento Sistêmico"
+  soft_skills:
+    - "Auto-organização"
+    - "Segurança Psicológica"
+    - "Comunicação Explícita"
+
+  # Eixo 2 — Perfil Sensorial (resumo — detalhes em profile-metadata.json)
+  neurodiversity_summary:
+    auditory: alto
+    predictability: alto
+    social_communication: medio
+    social_anxiety: medio
+    tactile: baixo
+
+  # Eixo 3 — Contexto Ágil
+  agile_context:
+    methodology: Scrum
+    sprint_moment: inicio
+    sprint_duration_days: 15
+    use_scenario:
+      - "Treinamento introdutório Scrum"
+      - "Onboarding de novos membros"
+      - "Retrospectivas de times com baixa velocidade"
+
+  target_audience:
+    roles:
+      - "Facilitador Scrum"
+      - "Coach Ágil"
+      - "Professor de Engenharia de Software"
+      - "Time de Desenvolvimento"
+    team_size_min: 3
+    team_size_max: 10
+    prerequisites: nenhum
+
+  business_problem: >
+    Times que confundem esforço individual com produtividade coletiva;
+    ausência de cultura de melhoria contínua.
+
+# ── USAGE ────────────────────────────────────────────────
+usage:
+  duration_minutes:
+    facilitator_prep: 10
+    execution: 20
+    debriefing: 10
+    total: 40
+
+  physical_requirements:
+    space_m2_min: 20
+    layout: "Espaço aberto sem mesas no centro"
+
+  materials:
+    - item: "Bolinhas de espuma"
+      quantity_min: 50
+    - item: "Cronômetro"
+      quantity_min: 1
+    - item: "Quadro branco"
+      quantity_min: 1
+    - item: "Marcador"
+      quantity_min: 1
+
+  scaffolding:
+    rules:
+      - "Todos os participantes devem tocar na bola"
+      - "A bola deve ter tempo de ar obrigatório entre toques"
+      - "Começa e termina na mesma pessoa"
+      - "Não pode passar para o vizinho imediato"
+      - "Bola no chão = defeito (não conta)"
+    steps:
+      - step: 1
+        phase: "Introdução das Regras"
+        duration_min: 5
+        description: "Escrever as 5 regras no quadro. Garantir que todos leram antes de começar."
+      - step: 2
+        phase: "Ciclo Iterativo"
+        duration_min: 20
+        sprints: 5
+        sprint_structure:
+          planning_min: 1
+          execution_min: 2
+          review_retro_min: 1
+        expected_evolution:
+          sprint_1: "Caos"
+          sprint_2_3: "Adaptação"
+          sprint_4_5: "Otimização e fluxo"
+      - step: 3
+        phase: "Debriefing"
+        duration_min: 10
+        key_question: "O que causou o maior salto: trabalhar mais rápido ou mudar o processo?"
+        core_lesson: "Processo > Esforço bruto"
+
+  effectiveness_kpis:
+    - id: KPI-01
+      name: "Aumento do Throughput por Sprint"
+      measurement: "Contagem de bolinhas por sprint registrada no quadro"
+    - id: KPI-02
+      name: "Redução da variância Estimativa vs. Realizado"
+      measurement: "Comparação entre meta planejada e resultado obtido"
+
+# ── SOLUTION (referências aos artefatos) ─────────────────
+artifacts:
+  - id: ART-01A
+    name: "Guia do Facilitador"
+    type: PDF
+    path: "DIN-AGIL-001/guia_facilitador.pdf"
+  - id: ART-01B
+    name: "Quadro de Pontuação"
+    type: LaTeX
+    path: "DIN-AGIL-001/quadro_pontuacao.tex"
+  - id: ART-01C
+    name: "Checklist de Materiais"
+    type: Markdown
+    path: "DIN-AGIL-001/checklist.md"
+  - id: ART-01D
+    name: "Regras (cartão)"
+    type: PDF
+    path: "DIN-AGIL-001/regras_card.pdf"
+
+# ── QUALITY ──────────────────────────────────────────────
+quality:
+  validation_status: "Validado em múltiplas turmas de pós-graduação"
+  quality_level: alto
+  reviewed_by: "Facilitadores certificados CSM/PSM"
+  references:
+    - "Gloger, B. (2008). Ballpoint Game"
+    - "Agile42. Ballpoint Game Guide"
+    - "Ju, A. et al. (2021). ICSE 2021"

@@ -1,0 +1,94 @@
+{
+  "profileType": "onboarding-accessibility",
+  "profileVersion": "OAP-1.0",
+  "assetProfileID": "OAP-DIN-AGIL-001-v1",
+  "assetID": "DIN-AGIL-001",
+  "adherenceDate": "2026-04-28",
+
+  "coreRASCompliance": {
+    "classification": true,
+    "solution": true,
+    "usage": true,
+    "relatedAssets": true
+  },
+
+  "pedagogy": {
+    "primaryConstruct": "E2.1",
+    "primaryConstructDescription": "Confiança — Frequência de Entrega",
+    "primaryConstructSource": "ICSE 2021 — Tabela III",
+    "onboardingStrategy": "Simple-Complex",
+    "onboardingStrategySource": "ICSE 2021 §III-B1 p.619",
+    "methodology": [
+      "ExperientialLearning",
+      "Gamification"
+    ],
+    "taskComplexity": "low",
+    "taskComplexityRationale": "Regras simples (5), ciclos rápidos (2 min), feedback imediato",
+    "independenceMilestone": "Participante estima velocidade corretamente e sugere melhorias sem auxílio",
+    "independenceMilestoneSource": "ICSE 2021 §III-A p.617",
+    "facilitatorSupportLevel": "minimum",
+    "facilitatorSupportRationale": "Deixar emergir a solução — ICSE 2021 §III-A1 p.617"
+  },
+
+  "accessibility": {
+    "auditoryAdaptations": {
+      "description": "Sem dependência exclusiva de fala; eliminar estímulos sonoros abruptos",
+      "mandatory_adaptations": [
+        "Utilizar bolinhas de espuma (reduz impacto acústico)",
+        "Substituir sinal sonoro de 'pare' por sinal visual (cartão colorido ou luz)"
+      ]
+    },
+    "visualAdaptations": {
+      "description": "Organização visual e previsibilidade estrutural",
+      "mandatory_adaptations": [
+        "Escrever as 5 regras no quadro antes de iniciar",
+        "Manter as regras visíveis durante toda a dinâmica"
+      ]
+    },
+    "tactileMotorAdaptations": {
+      "description": "Feedback tátil importante; respeitar sensibilidade tátil",
+      "mandatory_adaptations": [
+        "Usar bolinhas de espuma (suaves ao toque)",
+        "Garantir movimento livre sem restrições posturais"
+      ],
+      "optional_adaptations": [
+        "Oferecer bolinhas com texturas diferentes para escolha do participante"
+      ]
+    },
+    "sensoryTriggers": [
+      "Ruído de bolinhas rígidas ao cair",
+      "Sinal sonoro abrupto do cronômetro",
+      "Aglomeração em espaços pequenos"
+    ],
+    "inputVariability": [
+      "Participação por contagem gestual",
+      "Registro escrito no lugar de fala",
+      "Participação corporal direta"
+    ],
+    "literalLanguage": true,
+    "literalLanguageNote": "'Bola no chão = defeito' é instrução literal, não metáfora",
+    "structuralPredictability": true,
+    "structuralPredictabilityNote": "5 sprints = padrão fixo; Setup → Sprint → Retro → Debriefing sempre igual"
+  },
+
+  "lineage": {
+    "parentAssetID": null,
+    "lineageType": "root",
+    "assetType": "dinamica_presencial",
+    "variants": [
+      {
+        "variantID": "DIN-AGIL-001-VAR1",
+        "description": "Bolinhas com pesos diferentes — simula variabilidade de WIP"
+      },
+      {
+        "variantID": "DIN-AGIL-001-VAR2",
+        "description": "Versão remota — objetos virtuais em quadro digital"
+      },
+      {
+        "variantID": "DIN-AGIL-001-VAR3",
+        "description": "Com debriefing estendido — aprofundamento em métricas de fluxo"
+      }
+    ],
+    "derivedAssets": []
+  }
+}
