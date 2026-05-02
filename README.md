@@ -42,7 +42,7 @@ dinamicas-onboarding/
 
 ---
 
-## Taxonomia tridimensional
+## Classificação tridimensional
 
 Cada dinâmica é classificada segundo três eixos ortogonais que permitem filtragem precisa:
 
