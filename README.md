@@ -17,26 +17,39 @@ A abordagem transforma práticas de integração isoladas em ativos **descobrív
 ```
 dinamicas-onboarding/
 │
-├── soft-skills/                  ← Dinâmicas de competências interpessoais
-│   ├── comunicacao/
-│   ├── trabalho-em-equipe/
-│   ├── gestao-de-ansiedade/
-│   └── colaboracao-em-pares/
-│
-├── hard-skills/                  ← Dinâmicas de competências técnicas
+├── hard-skills/
 │   ├── metodologias-ageis/
+│   │   ├── DIN-AGIL-001/               → Jogo das Bolinhas
+│   │   │   ├── README.md
+│   │   │   ├── params.yaml
+│   │   │   ├── profile_info.json
+│   │   │   └── relationships.json
+│   │   └── DIN-AGIL-002/               → Construção com Blocos
 │   ├── controle-de-versao/
+│   │   └── DIN-GIT-001/                → Git em Conflito
 │   ├── revisao-de-codigo/
-│   └── logica-de-programacao/
+│   │   └── DIN-REV-001/                → CRSG — Revisão de Código
+│   ├── estimativa-agil/
+│   │   └── DIN-PLAN-001/               → Planning Poker
+│   └── qualidade/
+│       └── DIN-TDD-001/                → TDD Kata
 │
-├── assets/                       ← Ativos RAS instanciados
-│   ├── DIN-AGIL-001/             → Jogo das Bolinhas
-│   ├── DIN-AGIL-002/             → Construção com Blocos
-│   ├── DIN-COM-001/              → O Campo Minado
-│   └── DIN-SOFT-001/             → A Moeda de Duas Faces
+├── soft-skills/
+│   ├── comunicacao/
+│   │   └── DIN-COM-001/                → O Campo Minado
+│   ├── colaboracao-em-pares/
+│   │   └── DIN-SOFT-001/               → A Moeda de Duas Faces
+│   ├── autoadvocacia/
+│   │   └── DIN-MAND-001/               → Peço, Logo Recebo
+│   ├── cerimonias-ageis/
+│   │   └── DIN-RETRO-001/              → Retrospectiva Guiada
+│   ├── feedback/
+│   │   └── DIN-FEED-001/               → Feedback em 4 Passos
+│   └── seguranca-psicologica/
+│       └── DIN-PSAF-001/               → Termômetro Psicológico
 │
-├── SUMMARY.md                    ← Mapa de navegação do GitBook
-├── README.md                     ← Este arquivo
+├── SUMMARY.md
+├── README.md
 └── .gitignore
 ```
 
