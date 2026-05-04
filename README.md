@@ -63,7 +63,7 @@ Cada dinâmica é classificada segundo três eixos ortogonais que permitem filtr
 |------|-----------------|---------|
 | **Habilidades** | Hard e soft skills desenvolvidas | Comunicação assertiva, controle de versão |
 | **Perfil Sensorial** | Dimensões de neurodiversidade endereçadas | Sensibilidade auditiva, previsibilidade |
-| **Contexto Ágil** | Momento da sprint | Início, meio ou fim |
+
 
 ---
 
