@@ -1,0 +1,92 @@
+{
+  "profileType": "onboarding-accessibility",
+  "profileVersion": "OAP-1.0",
+  "assetProfileID": "OAP-DIN-PSAF-001-v1",
+  "assetID": "DIN-PSAF-001",
+  "adherenceDate": "2026-05-05",
+
+  "coreRASCompliance": {
+    "classification": true,
+    "solution": true,
+    "usage": true,
+    "relatedAssets": true
+  },
+
+  "pedagogy": {
+    "primaryConstruct": "E2.x + E3.x",
+    "primaryConstructDescription": "Confiança (Segurança Psicológica) + Socialização (Vulnerabilidade Profissional)",
+    "primaryConstructSource": "ICSE 2021 — Tabela III, p.618",
+    "onboardingStrategy": "Experiential Learning",
+    "onboardingStrategySource": "ICSE 2021 §III-B2",
+    "methodology": [
+      "Reflexao",
+      "Autoavaliacao",
+      "ChecagemColetiva"
+    ],
+    "taskComplexity": "low",
+    "taskComplexityRationale": "Tarefa principal é marcar um número em escala visual — complexidade está na abertura emocional, não na cognição",
+    "independenceMilestone": "Participante expressa honestamente seu nível de segurança psicológica e propõe ao menos uma barreira ou acordo de convivência",
+    "independenceMilestoneSource": "ICSE 2021 §III-A, p.617",
+    "facilitatorSupportLevel": "active",
+    "facilitatorSupportRationale": "Cria e mantém o ambiente seguro durante toda a sessão; garante anonimato; facilita sem apontar indivíduos"
+  },
+
+  "accessibility": {
+    "anonymityAdaptations": {
+      "description": "Fichas anônimas são o mecanismo central que permite participação sem exposição",
+      "mandatory_adaptations": [
+        "Fichas anônimas distribuídas a todos — ninguém precisa verbalizar seu número",
+        "Facilitador recolhe fichas sem olhar e não revela números individuais em nenhuma circunstância"
+      ]
+    },
+    "visualScaleAdaptations": {
+      "description": "Escala 1–5 com descrição literal de cada nível no quadro e nas fichas",
+      "mandatory_adaptations": [
+        "Cada nível da escala tem descrição escrita explícita — participante não infere significado",
+        "Termômetro visual permanece visível no quadro durante toda a sessão"
+      ]
+    },
+    "writtenParticipationAdaptations": {
+      "description": "Opção de contribuir para a discussão por escrito em vez de verbalmente",
+      "mandatory_adaptations": [
+        "Post-its disponíveis para contribuições escritas durante a discussão",
+        "Facilitador lê post-its em voz alta sem identificar autores"
+      ]
+    },
+    "sensoryTriggers": [
+      "Pressão de revelar vulnerabilidade em grupo",
+      "Medo de ser identificado mesmo com anonimato declarado",
+      "Resultados muito baixos que geram tensão no grupo"
+    ],
+    "inputVariability": [
+      "Marcação anônima em papel — modo padrão",
+      "Online: votação anônima via Mentimeter com histograma em tempo real",
+      "Contribuição para discussão por post-it — não precisa falar"
+    ],
+    "literalLanguage": true,
+    "literalLanguageNote": "Escala 1–5 tem descrição literal de cada nível; 'segurança psicológica' é explicada com exemplos concretos antes da marcação",
+    "structuralPredictability": true,
+    "structuralPredictabilityNote": "5 fases em ordem invariável anunciadas antes do início; participante sabe que não será identificado — regra explícita e repetida"
+  },
+
+  "lineage": {
+    "parentAssetID": null,
+    "lineageType": "root",
+    "assetType": "dinamica_fisica_ou_digital",
+    "variants": [
+      {
+        "variantID": "DIN-PSAF-001-VAR1",
+        "description": "Termômetro de humor — mede estado emocional atual; uso em check-ins diários"
+      },
+      {
+        "variantID": "DIN-PSAF-001-VAR2",
+        "description": "Termômetro de energia — mede carga percebida; identifica esgotamento em sprints longos"
+      },
+      {
+        "variantID": "DIN-PSAF-001-VAR3",
+        "description": "Multi-dimensão — 3 termômetros: segurança para errar / pedir ajuda / discordar"
+      }
+    ],
+    "derivedAssets": []
+  }
+}

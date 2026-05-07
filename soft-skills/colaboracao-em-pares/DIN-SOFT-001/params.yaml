@@ -1,0 +1,203 @@
+# ═══════════════════════════════════════════════════════
+# params.yaml — DIN-SOFT-001 — A Moeda de Duas Faces
+# Especificação: RAS 3.0 (INCOSE INSIGHT Vol.28/5, 2025)
+# ═══════════════════════════════════════════════════════
+
+identification:
+  asset_id: "DIN-SOFT-001"
+  name: "A Moeda de Duas Faces (The Two-Sided Coin)"
+  version: "RAS-3.0"
+  repository_path: "soft-skills/colaboracao-em-pares/DIN-SOFT-001/"
+  author: "Equipe RAS — ras-dinamicas@institucional.br"
+  last_updated: "2026-05-05"
+
+classification:
+  domain: "soft-skills"
+  subdomain: "colaboracao-em-pares"
+  complexity: "Média a Alta"
+  duration_minutes: 45
+  group_size: "6-20"
+  tags:
+    - "Role-Playing"
+    - "Empatia"
+    - "QA"
+    - "MoSCoW"
+    - "Debate"
+    - "Onboarding"
+  hard_skills:
+    - "Análise de Riscos"
+    - "Priorização de Backlog (MoSCoW)"
+  soft_skills:
+    - "Empatia Cognitiva"
+    - "Argumentação Lógica"
+    - "Flexibilidade Cognitiva"
+  neurodiversity_summary: >
+    O bastão da fala garante turnos explícitos, eliminando a incerteza de quando
+    falar — reduz sobrecarga de comunicação social (ICSE 2021 §III-B1). A versão
+    silenciosa (post-its) remove completamente a pressão de fala oral, acomodando
+    perfis com ansiedade social elevada. O conceito de "advogado do diabo" deve ser
+    explicado com exemplos concretos antes do início, pois perfis com rigidez cognitiva
+    podem ter dificuldade em defender posição contrária à sua. Post-its no quadro
+    permitem participação sem exposição oral direta.
+  agile_context:
+    methodology: "Scrum / Gestão de Produto"
+    sprint_moment: "fim"
+    use_scenario:
+      - "Retrospectivas de incidentes de produção"
+      - "Treinamentos de gestão de produto"
+      - "Formação de times Dev+QA"
+  target_audience:
+    roles:
+      - "Desenvolvedor"
+      - "QA / Tester"
+      - "Product Owner"
+      - "Scrum Master"
+    team_size_min: 6
+    team_size_max: 20
+    prerequisites: "nenhum"
+  business_problem: >
+    Conflito Dev vs. QA sem base técnica; decisões go/no-go sem compreensão
+    do ponto de vista do outro. No onboarding: visão limitada ao próprio papel (E3.3).
+
+usage:
+  target_roles:
+    - "Desenvolvedor"
+    - "QA / Tester"
+    - "Product Owner"
+    - "Scrum Master"
+  prerequisites: []
+  learning_objectives:
+    - "Construir argumentos técnicos e de negócio para posição oposta à própria"
+    - "Desenvolver empatia cognitiva entre perfis Dev e QA"
+    - "Aplicar priorização MoSCoW em cenário de conflito de prioridades"
+    - "Identificar trade-offs entre velocidade de entrega e qualidade de software"
+  facilitation_level: "Intermediário"
+  accessibility_compliance:
+    - "OAP-1.0"
+
+  duration_minutes:
+    setup_roles: 5
+    preparation: 10
+    initial_exposition: 4
+    debate: 15
+    role_inversion: 2
+    debriefing: 10
+    total: 45
+
+  physical_requirements:
+    space_m2_min: 15
+    layout: "Sala com dois grupos separados (mesas frente a frente ou lados opostos da sala)"
+
+  materials:
+    - item: "Cartões de Cenário de Conflito (ART-04A)"
+      quantity_min: 1
+    - item: "Bastão da Fala (objeto físico)"
+      quantity_min: 1
+    - item: "Post-its"
+      quantity_min: 50
+    - item: "Canetas/marcadores"
+      quantity_min: 6
+    - item: "Quadro branco"
+      quantity_min: 1
+    - item: "Cronômetro"
+      quantity_min: 1
+
+  scaffolding:
+    rules:
+      - "Defender a posição do cartão, não a opinião pessoal"
+      - "Apenas quem tem o bastão da fala pode falar"
+      - "Argumentos devem ser técnicos ou de negócio — sem ataques pessoais"
+      - "Facilitador cronometra e impõe rodízio do bastão"
+    steps:
+      - step: 1
+        phase: "Atribuição de Papéis"
+        duration_min: 5
+        description: "Dividir grupos A e B. Distribuir cartões de cenário. Explicar 'advogado do diabo' com exemplo concreto."
+      - step: 2
+        phase: "Preparação dos Argumentos"
+        duration_min: 10
+        description: "Cada grupo prepara 3 argumentos técnicos + 3 de negócio em post-its."
+      - step: 3
+        phase: "Exposição Inicial"
+        duration_min: 4
+        description: "Grupo A expõe (2 min) com bastão. Grupo B expõe (2 min) com bastão."
+      - step: 4
+        phase: "Debate"
+        duration_min: 15
+        description: "Rodadas de réplica e tréplica com bastão da fala. Facilitador media e mantém tom técnico."
+      - step: 5
+        phase: "Inversão de Papéis"
+        duration_min: 2
+        description: "Grupos trocam de posição. (Repetição do debate opcional +10 min.)"
+      - step: 6
+        phase: "Reflexão e Debriefing"
+        duration_min: 10
+        key_question: "Qual argumento do outro lado foi mais difícil de refutar? O que isso diz sobre o processo?"
+        core_lesson: "Empatia técnica reduz conflito e melhora decisões go/no-go"
+
+  effectiveness_kpis:
+    - id: "KPI-1"
+      name: "Qualidade dos argumentos opostos (1–5)"
+      measurement: "Rubrica de avaliação na Ficha KPI"
+      construct: "Aprendizado (E1.4)"
+    - id: "KPI-2"
+      name: "Taxa de mudança de opinião (%)"
+      measurement: "Votação anônima pré/pós dinâmica"
+      construct: "Socialização (E3.1)"
+    - id: "KPI-3"
+      name: "Argumentos técnicos válidos por grupo"
+      measurement: "Contagem na Matriz de Argumentos"
+      construct: "Aprendizado (E1.1)"
+    - id: "KPI-4"
+      name: "Taxa de mudança de perspectiva"
+      measurement: "Autoavaliação pré/pós"
+      construct: "Socialização (E3.3)"
+
+artifacts:
+  - id: "ART-04A"
+    name: "Cartões de Cenário de Conflito"
+    type: PDF
+    path: "DIN-SOFT-001/cenarios_conflito.pdf"
+  - id: "ART-04B"
+    name: "Roteiro do Facilitador"
+    type: PDF
+    path: "DIN-SOFT-001/roteiro_facilitador.pdf"
+  - id: "ART-04C"
+    name: "Matriz de Argumentos"
+    type: XLSX
+    path: "DIN-SOFT-001/matriz_argumentos.xlsx"
+  - id: "ART-04D"
+    name: "Bastão da Fala (protocolo)"
+    type: Markdown
+    path: "DIN-SOFT-001/bastao_fala.md"
+  - id: "ART-04E"
+    name: "Customization Guide"
+    type: Markdown
+    path: "DIN-SOFT-001/customization_guide.md"
+  - id: "ART-04F"
+    name: "Ficha KPI"
+    type: XLSX
+    path: "DIN-SOFT-001/registro_kpi.xlsx"
+
+quality:
+  validation_status: "Validado em treinamentos corporativos Dev+QA"
+  quality_level: "alto"
+  reviewed_by: "Facilitadores corporativos e coaches; v1.3.0 auditada 2026-04-28"
+  version_history:
+    - version: "1.0.0"
+      date: "2025-01"
+      description: "Versão inicial."
+    - version: "1.1.0"
+      date: "2026-04"
+      description: "Auditoria RAS v3.1 — customization, params, tags, KPIs."
+    - version: "1.2.0"
+      date: "2026-04"
+      description: "v4.0 — Metadados ICSE 2021."
+    - version: "1.3.0"
+      date: "2026-05"
+      description: "v4.1 — Metadados RAS 3.0 + Profile OAP-1.0."
+  references:
+    - "Spolin, V. (1963). Improvisation for the Theater. Northwestern University Press."
+    - "Robbins, S.P.; Judge, T.A. (2003). Organizational Behavior, 10th ed. Pearson."
+    - "Ju, A. et al. (2021). ICSE 2021, pp.613–623."
+    - "Hause, M. et al. (2025). RAS 3.0. INCOSE INSIGHT, Vol.28/5."

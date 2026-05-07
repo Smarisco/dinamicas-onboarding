@@ -1,0 +1,95 @@
+{
+  "profileType": "onboarding-accessibility",
+  "profileVersion": "OAP-1.0",
+  "assetProfileID": "OAP-DIN-COM-001-v1",
+  "assetID": "DIN-COM-001",
+  "adherenceDate": "2026-05-05",
+
+  "coreRASCompliance": {
+    "classification": true,
+    "solution": true,
+    "usage": true,
+    "relatedAssets": true
+  },
+
+  "pedagogy": {
+    "primaryConstruct": "E3.1 + E2.5",
+    "primaryConstructDescription": "Socialização (Integração Social) + Confiança (Confiança Interpessoal)",
+    "primaryConstructSource": "ICSE 2021 — Tabela III, p.618",
+    "onboardingStrategy": "Simple-Complex",
+    "onboardingStrategySource": "ICSE 2021 §III-B1 p.619",
+    "methodology": [
+      "ExperientialLearning",
+      "RolePlaying"
+    ],
+    "taskComplexity": "low_to_medium",
+    "taskComplexityRationale": "Comunicação bilateral com vocabulário pré-definido; complexidade aumenta com venda e sem Cartão de Comandos",
+    "independenceMilestone": "Participante guia o parceiro com zero colisões sem intervenção do facilitador",
+    "independenceMilestoneSource": "ICSE 2021 §III-A p.617",
+    "facilitatorSupportLevel": "mentor",
+    "facilitatorSupportRationale": "Guia passo a passo nas primeiras execuções — ICSE 2021 §III-A1 p.618"
+  },
+
+  "accessibility": {
+    "auditoryAdaptations": {
+      "description": "Dinâmica é essencialmente verbal; garantir ambiente sem ruído concorrente",
+      "mandatory_adaptations": [
+        "Realizar duplas em espaços separados se múltiplas duplas simultâneas",
+        "Facilitador sinaliza início/fim com gesto visual além do verbal"
+      ]
+    },
+    "visualAdaptations": {
+      "description": "Participante vendado: substituição por óculos opacos reduz ansiedade",
+      "mandatory_adaptations": [
+        "Oferecer óculos opacos como alternativa à venda para perfis com sensibilidade tátil na cabeça",
+        "Versão 'escrita prévia' disponível: Programador escreve lista de instruções antes, Sistema executa lendo"
+      ]
+    },
+    "tactileMotorAdaptations": {
+      "description": "Reforçar regra de não-toque; garantir campo sem obstáculos com bordas cortantes",
+      "mandatory_adaptations": [
+        "Usar apenas objetos leves e sem arestas (garrafas plásticas, almofadas, cones de EVA)",
+        "Reforçar explicitamente antes do início: 'O Programador NÃO toca o Sistema'"
+      ]
+    },
+    "sensoryTriggers": [
+      "Venda ou objeto cobrindo os olhos (sensação de restrição)",
+      "Ruído de múltiplas duplas guiando simultaneamente",
+      "Pressão de tempo durante a travessia"
+    ],
+    "inputVariability": [
+      "Participação como Programador apenas (sem precisar ser vendado)",
+      "Versão escrita: instruções registradas por escrito antes da execução",
+      "Participação como observador/registrador da Ficha KPI"
+    ],
+    "literalLanguage": true,
+    "literalLanguageNote": "Instrução literal é o núcleo da dinâmica: '2 passos à frente' significa exatamente 2 passos — reforçar que não há interpretação",
+    "structuralPredictability": true,
+    "structuralPredictabilityNote": "Campo montado antes do início; Cartão de Comandos define vocabulário fixo; roteiro de 5 fases anunciado no briefing"
+  },
+
+  "lineage": {
+    "parentAssetID": null,
+    "lineageType": "root",
+    "assetType": "dinamica_presencial",
+    "variants": [
+      {
+        "variantID": "DIN-COM-001-VAR1",
+        "description": "Sem venda (escrita prévia) — Programador escreve lista; Sistema executa lendo"
+      },
+      {
+        "variantID": "DIN-COM-001-VAR2",
+        "description": "Remota via chat — instruções por Slack com delay de 5 s entre mensagens"
+      },
+      {
+        "variantID": "DIN-COM-001-VAR3",
+        "description": "Múltiplos Sistemas — 1 Programador guia 2–3 Sistemas simultâneos"
+      },
+      {
+        "variantID": "DIN-COM-001-VAR4",
+        "description": "Campo codificado — comandos em pseudocódigo para perfis técnicos avançados"
+      }
+    ],
+    "derivedAssets": []
+  }
+}

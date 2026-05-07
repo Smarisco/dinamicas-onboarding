@@ -1,0 +1,162 @@
+# ═══════════════════════════════════════════════════════
+# params.yaml — DIN-FEED-001 — Feedback em 4 Passos
+# Especificação: RAS 3.0 (INCOSE INSIGHT Vol.28/5, 2025)
+# ═══════════════════════════════════════════════════════
+
+identification:
+  asset_id: "DIN-FEED-001"
+  name: "Feedback em 4 Passos"
+  version: "RAS-3.0"
+  repository_path: "soft-skills/feedback/DIN-FEED-001/"
+  author: "Equipe RAS — ras-dinamicas@institucional.br"
+  last_updated: "2026-05-05"
+
+classification:
+  domain: "soft-skills"
+  subdomain: "feedback"
+  complexity: "Média"
+  duration_minutes: 45
+  group_size: "4-12"
+  tags:
+    - "Feedback Estruturado"
+    - "Comunicação Não-Violenta"
+    - "Escuta Empática"
+    - "Modelo Pendleton"
+    - "Onboarding"
+  hard_skills: []
+  soft_skills:
+    - "Feedback Estruturado"
+    - "Comunicação Não-Violenta"
+    - "Escuta Empática"
+  neurodiversity_summary: >
+    O Modelo Pendleton oferece previsibilidade máxima: 4 passos numerados em ordem invariável,
+    cada um com pergunta literal e escrita no cartão. Participante não precisa improvisar —
+    lê a pergunta do cartão e espera a resposta. A opção de escrever antes de falar elimina
+    pressão de improviso oral. Cenários escritos com linguagem direta e não-ambígua garantem
+    literalidade. A estrutura sequencial elimina ambiguidade sobre quem fala quando.
+  agile_context:
+    methodology: "Comunicação Profissional / Soft Skills"
+    sprint_moment: "fim"
+    use_scenario:
+      - "Workshops de comunicação profissional"
+      - "Treinamentos de liderança"
+      - "Onboarding de times com desafios de feedback"
+  target_audience:
+    roles:
+      - "Desenvolvedor"
+      - "Scrum Master"
+      - "Product Owner"
+      - "QA / Tester"
+      - "Líder Técnico"
+    team_size_min: 4
+    team_size_max: 12
+    prerequisites: "Nenhuma experiência prévia necessária"
+  business_problem: >
+    Feedback ineficaz, agressivo ou passivo; dificuldade em se adaptar à cultura de
+    feedback durante o onboarding (E3.x — ICSE 2021).
+
+usage:
+  target_roles:
+    - "Desenvolvedor"
+    - "Scrum Master"
+    - "Product Owner"
+    - "QA / Tester"
+    - "Líder Técnico"
+  prerequisites:
+    - "Nenhuma experiência prévia necessária"
+  learning_objectives:
+    - "Aplicar o Modelo Pendleton (4 passos) para dar feedback construtivo"
+    - "Praticar escuta ativa sem interromper durante passos 1 e 2"
+    - "Receber feedback sem postura defensiva"
+    - "Propor ações de melhoria (passo 3) com linguagem não-violenta"
+  facilitation_level: "Intermediário"
+  accessibility_compliance:
+    - "OAP-1.0"
+
+  duration_minutes:
+    briefing: 10
+    practice_pairs: 20
+    role_inversion: 10
+    collective_reflection: 5
+    total: 45
+
+  physical_requirements:
+    space_m2_min: 12
+    layout: "Sala com espaço para duplas/trios; mesas dispostas em ilhas de 2-3 pessoas"
+
+  materials:
+    - item: "Cartões com Modelo Pendleton (ART-11A)"
+      quantity_min: 12
+    - item: "Cenários de feedback impressos (ART-11B)"
+      quantity_min: 6
+    - item: "Quadro branco ou flip chart"
+      quantity_min: 1
+    - item: "Marcadores"
+      quantity_min: 4
+
+  scaffolding:
+    rules:
+      - "Passos 1 e 2: quem recebe o feedback responde ANTES de ouvir a perspectiva do parceiro"
+      - "Quem dá feedback escuta sem interromper nos passos 1 e 2"
+      - "Passo 3 usa linguagem de ação — 'eu faria X' — não de crítica"
+      - "Passo 4 é oferta concreta de apoio — não conselho não solicitado"
+    steps:
+      - step: 1
+        phase: "Briefing"
+        duration_min: 10
+        description: "Distribuir cartões Pendleton; explicar 4 passos com exemplo no quadro; distribuir cenários."
+      - step: 2
+        phase: "Prática em Duplas/Trios"
+        duration_min: 20
+        description: "Duplas praticam com cenário distribuído; quem dá feedback guia pelos 4 passos na ordem."
+      - step: 3
+        phase: "Inversão de Papéis"
+        duration_min: 10
+        description: "Trocar papéis — quem recebeu agora dá feedback; mesmo cenário ou cenário alternativo."
+      - step: 4
+        phase: "Reflexão Coletiva"
+        duration_min: 5
+        key_question: "Qual passo foi mais difícil? Como o modelo mudou a qualidade do feedback?"
+        core_lesson: "Feedback estruturado protege relações — a estrutura existe para reduzir dor, não para formalizar burocracia"
+
+  effectiveness_kpis:
+    - id: "KPI-1"
+      name: "Qualidade do feedback dado (1–5)"
+      measurement: "ART-11D — avaliação do facilitador por observação"
+      construct: "Aprendizado (E1.x)"
+    - id: "KPI-2"
+      name: "Capacidade de receber feedback (1–5)"
+      measurement: "ART-11D — autoavaliação do participante"
+      construct: "Confiança (E2.x)"
+
+artifacts:
+  - id: "ART-11A"
+    name: "Cartões com Modelo Pendleton"
+    type: PDF
+    path: "DIN-FEED-001/modelo_pendleton.pdf"
+  - id: "ART-11B"
+    name: "Cenários de Feedback"
+    type: Markdown
+    path: "DIN-FEED-001/cenarios_feedback.md"
+  - id: "ART-11C"
+    name: "Guia do Facilitador"
+    type: Markdown
+    path: "DIN-FEED-001/guia_facilitador.md"
+  - id: "ART-11D"
+    name: "Ficha KPI"
+    type: XLSX
+    path: "DIN-FEED-001/registro_kpi.xlsx"
+
+quality:
+  validation_status: "Em validação interna"
+  quality_level: "medio"
+  reviewed_by: "Equipe de RH e facilitadores internos"
+  version_history:
+    - version: "1.0.0"
+      date: "2026-05"
+      description: "Versão inicial estruturada em RAS 3.0."
+  references:
+    - "Pendleton, D. et al. (1984). The Consultation: An Approach to Learning and Teaching. Oxford University Press."
+    - "Huang, V.W. et al. (2024). Improving SE Teamwork with Structured Feedback. SIGCSE."
+    - "Ju, A. et al. (2021). ICSE 2021, pp.613–623."
+    - "Hause, M. et al. (2025). RAS 3.0. INCOSE INSIGHT, Vol.28/5."

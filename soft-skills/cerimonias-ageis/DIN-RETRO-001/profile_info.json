@@ -1,0 +1,84 @@
+{
+  "profileType": "onboarding-accessibility",
+  "profileVersion": "OAP-1.0",
+  "assetProfileID": "OAP-DIN-RETRO-001-v1",
+  "assetID": "DIN-RETRO-001",
+  "adherenceDate": "2026-05-05",
+
+  "coreRASCompliance": {
+    "classification": true,
+    "solution": true,
+    "usage": true,
+    "relatedAssets": true
+  },
+
+  "pedagogy": {
+    "primaryConstruct": "E3.x + E2.x",
+    "primaryConstructDescription": "Socialização (Reflexão Coletiva) + Confiança (Abertura a Feedback)",
+    "primaryConstructSource": "ICSE 2021 — Tabela III, p.618",
+    "onboardingStrategy": "Experiential Learning",
+    "onboardingStrategySource": "ICSE 2021 §III-B2",
+    "methodology": [
+      "ReflexaoEstruturada",
+      "DerbyLarsen5Fases"
+    ],
+    "taskComplexity": "medium",
+    "taskComplexityRationale": "Estrutura de 5 fases reduz carga cognitiva; fase de escrita em silêncio elimina pressão de improviso",
+    "independenceMilestone": "Participante propõe ações de melhoria concretas (quem faz o quê até quando) sem auxílio do facilitador",
+    "independenceMilestoneSource": "ICSE 2021 §III-A, p.617",
+    "facilitatorSupportLevel": "moderate",
+    "facilitatorSupportRationale": "Facilita transição entre fases e garante que todos participem; intervenção mínima nas fases de escrita e discussão"
+  },
+
+  "accessibility": {
+    "silentWritingPhase": {
+      "description": "Fase Gather Data é conduzida em silêncio — todos escrevem post-its sem pressão de comunicação oral",
+      "mandatory_adaptations": [
+        "Silêncio obrigatório durante a fase Gather Data — sem discussão paralela",
+        "Timer visível exibido durante toda a fase de escrita"
+      ]
+    },
+    "structuralPredictabilityAdaptations": {
+      "description": "5 fases do modelo Derby & Larsen anunciadas antes do início; progressão linear e previsível",
+      "mandatory_adaptations": [
+        "Estrutura das 5 fases escrita no quadro antes de começar",
+        "Timer de cada fase exibido publicamente (não apenas anunciado verbalmente)",
+        "Facilitador anuncia início e fim de cada fase com frase padronizada"
+      ]
+    },
+    "sensoryTriggers": [
+      "Pressão de expor percepções negativas em grupo",
+      "Feedback inesperado sobre desempenho durante a retrospectiva"
+    ],
+    "inputVariability": [
+      "Post-its físicos ou digitais (Miro, Metroretro) — participante escolhe meio",
+      "Possibilidade de enviar post-its anonimamente ao facilitador antes da sessão",
+      "Check-in pode ser feito com emoji em vez de palavra falada"
+    ],
+    "literalLanguage": true,
+    "literalLanguageNote": "Perguntas das colunas são literais e diretas: 'O que foi bem?' e 'O que pode melhorar?' — sem metáforas abstratas",
+    "structuralPredictability": true,
+    "structuralPredictabilityNote": "5 fases fixas em ordem invariável; cada fase tem duração definida e exibida no timer"
+  },
+
+  "lineage": {
+    "parentAssetID": null,
+    "lineageType": "root",
+    "assetType": "dinamica_fisica_ou_digital",
+    "variants": [
+      {
+        "variantID": "DIN-RETRO-001-VAR1",
+        "description": "Estrelas e Desejos — perguntas: 'O que brilhou?' e 'O que desejo para o próximo sprint?'"
+      },
+      {
+        "variantID": "DIN-RETRO-001-VAR2",
+        "description": "Barco e Âncoras — metáfora visual: vento (impulso) vs. âncora (bloqueio)"
+      },
+      {
+        "variantID": "DIN-RETRO-001-VAR3",
+        "description": "Online (Miro/Metroretro) — ferramentas digitais com post-its virtuais para times remotos"
+      }
+    ],
+    "derivedAssets": []
+  }
+}

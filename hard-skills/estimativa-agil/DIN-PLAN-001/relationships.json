@@ -1,0 +1,100 @@
+{
+  "asset_id": "DIN-PLAN-001",
+  "spec_section": "related-asset — Sec.6.4.13 — Constraint 8",
+
+  "related_assets": [
+    {
+      "asset_id": "DIN-AGIL-001",
+      "name": "Jogo das Bolinhas",
+      "relationship_type": "similar",
+      "direction": "bidirecional",
+      "justification": "DIN-AGIL-001 introduz o conceito de velocity e throughput como base empírica para estimativa; DIN-PLAN-001 formaliza esse conceito em Story Points.",
+      "recommended_sequence": "DIN-AGIL-001 antes de DIN-PLAN-001"
+    },
+    {
+      "asset_id": "DIN-RETRO-001",
+      "name": "Retrospectiva Guiada",
+      "relationship_type": "similar",
+      "direction": "bidirecional",
+      "justification": "Retrospectiva permite revisar acurácia das estimativas do sprint anterior e melhorar o processo de Planning Poker.",
+      "recommended_sequence": "DIN-PLAN-001 antes de DIN-RETRO-001"
+    }
+  ],
+
+  "prerequisite_assets": [],
+
+  "suggested_progression": [
+    {
+      "order": 1,
+      "asset_id": "DIN-AGIL-001",
+      "moment": "inicio",
+      "goal": "Introduzir fluxo vs. ocupação e segurança psicológica"
+    },
+    {
+      "order": 2,
+      "asset_id": "DIN-AGIL-002",
+      "moment": "inicio",
+      "goal": "Aprofundar integração modular e comunicação entre equipes"
+    },
+    {
+      "order": 3,
+      "asset_id": "DIN-PLAN-001",
+      "moment": "inicio",
+      "goal": "Praticar estimativa colaborativa de esforço com Story Points"
+    },
+    {
+      "order": 4,
+      "asset_id": "DIN-COM-001",
+      "moment": "meio",
+      "goal": "Desenvolver comunicação precisa e confiança em pares Sênior/Júnior"
+    },
+    {
+      "order": 5,
+      "asset_id": "DIN-SOFT-001",
+      "moment": "meio",
+      "goal": "Consolidar empatia técnica Dev/QA por inversão de papéis"
+    },
+    {
+      "order": 6,
+      "asset_id": "DIN-GIT-001",
+      "moment": "meio",
+      "goal": "Praticar resolução de conflitos de versionamento em contexto colaborativo"
+    },
+    {
+      "order": 7,
+      "asset_id": "DIN-REV-001",
+      "moment": "meio",
+      "goal": "Desenvolver habilidades de code review e feedback técnico"
+    },
+    {
+      "order": 8,
+      "asset_id": "DIN-TDD-001",
+      "moment": "meio",
+      "goal": "Disciplinar ciclo TDD e cobertura de testes"
+    },
+    {
+      "order": 9,
+      "asset_id": "DIN-MAND-001",
+      "moment": "fim",
+      "goal": "Desenvolver autoadvocacia e comunicação assertiva"
+    },
+    {
+      "order": 10,
+      "asset_id": "DIN-RETRO-001",
+      "moment": "fim",
+      "goal": "Consolidar cultura de melhoria contínua via retrospectiva guiada"
+    },
+    {
+      "order": 11,
+      "asset_id": "DIN-FEED-001",
+      "moment": "fim",
+      "goal": "Praticar feedback estruturado com Modelo Pendleton"
+    },
+    {
+      "order": 12,
+      "asset_id": "DIN-PSAF-001",
+      "moment": "fim",
+      "goal": "Medir e consolidar segurança psicológica da equipe"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+# ═══════════════════════════════════════════════════════
+# params.yaml — DIN-GIT-001 — Git em Conflito
+# Especificação: RAS 3.0 (INCOSE INSIGHT Vol.28/5, 2025)
+# ═══════════════════════════════════════════════════════
+
+identification:
+  asset_id: "DIN-GIT-001"
+  name: "Git em Conflito (Git in Conflict)"
+  version: "RAS-3.0"
+  repository_path: "hard-skills/controle-de-versao/DIN-GIT-001/"
+  author: "Equipe RAS — ras-dinamicas@institucional.br"
+  last_updated: "2026-05-05"
+
+classification:
+  domain: "hard-skills"
+  subdomain: "controle-de-versao"
+  complexity: "Média a Alta"
+  duration_minutes: 60
+  group_size: "2-6"
+  tags:
+    - "Git"
+    - "branches"
+    - "merge"
+    - "rebase"
+    - "Resolução de Conflitos"
+    - "Code Review"
+    - "Comunicação Técnica"
+    - "Onboarding"
+  hard_skills:
+    - "Git (branches, merge, rebase)"
+    - "Resolução de Conflitos de Versionamento"
+    - "Code Review"
+  soft_skills:
+    - "Comunicação Técnica"
+    - "Negociação de Código"
+    - "Trabalho em Par"
+  neurodiversity_summary: >
+    Checklist de passos explícita (identificar → abrir → escolher → remover marcadores →
+    commitar) elimina a necessidade de improvisar o processo, atendendo ao princípio
+    de previsibilidade (ICSE 2021 §III-B3). Visualizadores gráficos (VS Code 3-way merge)
+    transformam o conflito em representação visual clara. Comandos Git literais e explícitos
+    reduzem ambiguidade. Prática em duplas com par de confiança reduz ansiedade de
+    "quebrar o repositório" (E2.x — ICSE 2021).
+  agile_context:
+    methodology: "Engenharia de Software / Git Workflow"
+    sprint_moment: "meio"
+    use_scenario:
+      - "Workshops de Git para devs novos"
+      - "Onboarding técnico de desenvolvedores"
+      - "Treinamentos de boas práticas de colaboração em repositório"
+  target_audience:
+    roles:
+      - "Desenvolvedor"
+      - "Tech Lead"
+      - "Engenheiro de Software em Onboarding"
+    team_size_min: 2
+    team_size_max: 6
+    prerequisites: "Conhecimento básico de Git (add, commit, push, pull)"
+  business_problem: >
+    Conflitos frequentes em merges; medo de quebrar o repositório no onboarding.
+    Comunicação técnica insuficiente sobre alterações de código (E2.x).
+
+usage:
+  target_roles:
+    - "Desenvolvedor"
+    - "Tech Lead"
+    - "Engenheiro de Software em Onboarding"
+  prerequisites:
+    - "Conhecimento básico de Git (add, commit, push, pull)"
+  learning_objectives:
+    - "Resolver conflitos de merge com commit limpo e testes passando"
+    - "Distinguir estratégias merge vs. rebase e escolher adequadamente"
+    - "Comunicar alterações de código com mensagens de commit descritivas"
+    - "Eliminar o medo de colaborar em repositório compartilhado"
+  facilitation_level: "Intermediário"
+  accessibility_compliance:
+    - "OAP-1.0"
+
+  duration_minutes:
+    setup: 10
+    conflict_1: 15
+    collective_review_1: 5
+    conflict_2: 15
+    conflict_3: 10
+    debriefing: 5
+    total: 60
+
+  physical_requirements:
+    space_m2_min: 10
+    layout: "Sala com computadores (1 por participante ou por dupla); acesso à internet para repositório"
+
+  materials:
+    - item: "Computadores com Git instalado"
+      quantity_min: 3
+    - item: "Acesso a repositório compartilhado (GitHub/GitLab)"
+      quantity_min: 1
+    - item: "IDE com suporte a 3-way merge (VS Code recomendado)"
+      quantity_min: 3
+    - item: "Checklist de passos impressa ou digital"
+      quantity_min: 6
+
+  scaffolding:
+    steps:
+      - step: 1
+        phase: "Setup"
+        duration_min: 10
+        description: "Clonar repositório de treinamento. Configurar user.name e user.email. Apresentar cenário narrativo do conflito."
+      - step: 2
+        phase: "Conflito 1 — Merge Simples"
+        duration_min: 15
+        description: "Duplas executam git merge; resolvem conflito de texto simples; garantem commit limpo."
+      - step: 3
+        phase: "Revisão Coletiva"
+        duration_min: 5
+        description: "Discutir estratégias usadas. O que a mensagem de conflito indicava?"
+      - step: 4
+        phase: "Conflito 2 — Lógica Conflitante"
+        duration_min: 15
+        description: "Conflito em lógica de negócio — ambas as versões são válidas, precisam ser combinadas."
+      - step: 5
+        phase: "Conflito 3 — Rebase (Avançado)"
+        duration_min: 10
+        description: "Rebase interativo ou cherry-pick (opcional para perfis avançados)."
+      - step: 6
+        phase: "Debriefing"
+        duration_min: 5
+        key_question: "Como comunicar melhor ao fazer um PR para evitar conflitos futuros?"
+        core_lesson: "Conflito Git = divergência de intenção — resolver requer comunicação, não apenas comandos"
+
+  effectiveness_kpis:
+    - id: "KPI-1"
+      name: "Tempo médio para resolução de conflitos (min)"
+      measurement: "Cronômetro por conflito registrado na Ficha KPI"
+      construct: "Aprendizado (E1.x)"
+    - id: "KPI-2"
+      name: "Número de conflitos resolvidos corretamente"
+      measurement: "Verificação de commit limpo + testes passando"
+      construct: "Confiança (E2.x)"
+
+artifacts:
+  - id: "ART-07A"
+    name: "Repositório Git de Treinamento"
+    type: Git
+    path: "DIN-GIT-001/repositorio_conflito.git"
+  - id: "ART-07B"
+    name: "Guia do Facilitador"
+    type: Markdown
+    path: "DIN-GIT-001/guia_facilitador.md"
+  - id: "ART-07C"
+    name: "Ficha KPI"
+    type: XLSX
+    path: "DIN-GIT-001/registro_kpi.xlsx"
+
+quality:
+  validation_status: "Em validação interna"
+  quality_level: "medio"
+  reviewed_by: "Equipe de Desenvolvimento e facilitadores internos"
+  version_history:
+    - version: "1.0.0"
+      date: "2026-05"
+      description: "Versão inicial estruturada em RAS 3.0."
+  references:
+    - "Chang, K. & Dow, K. (2024). Git conflict resolution study."
+    - "Ju, A. et al. (2021). ICSE 2021, pp.613–623."
+    - "Hause, M. et al. (2025). RAS 3.0. INCOSE INSIGHT, Vol.28/5."

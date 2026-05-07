@@ -1,0 +1,163 @@
+# ═══════════════════════════════════════════════════════
+# params.yaml — DIN-TDD-001 — TDD Kata
+# Especificação: RAS 3.0 (INCOSE INSIGHT Vol.28/5, 2025)
+# ═══════════════════════════════════════════════════════
+
+identification:
+  asset_id: "DIN-TDD-001"
+  name: "TDD Kata"
+  version: "RAS-3.0"
+  repository_path: "hard-skills/qualidade/DIN-TDD-001/"
+  author: "Equipe RAS — ras-dinamicas@institucional.br"
+  last_updated: "2026-05-05"
+
+classification:
+  domain: "hard-skills"
+  subdomain: "qualidade"
+  complexity: "Média"
+  duration_minutes: 60
+  group_size: "1-4"
+  tags:
+    - "Test-Driven Development"
+    - "Ciclo Red-Green-Refactor"
+    - "Cobertura de Testes"
+    - "Disciplina de Processo"
+    - "Paciência Iterativa"
+    - "Onboarding"
+  hard_skills:
+    - "Test-Driven Development"
+    - "Ciclo Red-Green-Refactor"
+    - "Cobertura de Testes"
+  soft_skills:
+    - "Disciplina de Processo"
+    - "Paciência Iterativa"
+  neurodiversity_summary: >
+    O ciclo TDD é um ritual explícito com 3 estados visuais (🔴 Red → 🟢 Green → 🔵
+    Refactor), que oferece previsibilidade estrutural máxima (ICSE 2021 §III-B3).
+    Feedback imediato do framework (teste passando/falhando) elimina ambiguidade sobre
+    o estado atual do código. A kata — problema delimitado com requisitos incrementais
+    explícitos — reduz a carga cognitiva de improvisação. A prática solo ou em pair
+    permite controle do ritmo pelo próprio participante.
+  agile_context:
+    methodology: "Engenharia de Software / Qualidade"
+    sprint_moment: "meio"
+    use_scenario:
+      - "Workshops de TDD"
+      - "Onboarding técnico de desenvolvedores"
+      - "Treinamentos de qualidade de software"
+  target_audience:
+    roles:
+      - "Desenvolvedor"
+      - "QA / Tester"
+      - "Engenheiro de Software em Onboarding"
+    team_size_min: 1
+    team_size_max: 4
+    prerequisites: "Conhecimento básico de programação e testes unitários"
+  business_problem: >
+    Baixa cobertura de testes; dificuldade em refatorar código com segurança.
+    No onboarding: falta de prática e disciplina em TDD (E1.x).
+
+usage:
+  target_roles:
+    - "Desenvolvedor"
+    - "QA / Tester"
+    - "Engenheiro de Software em Onboarding"
+  prerequisites:
+    - "Conhecimento básico de programação e testes unitários"
+  learning_objectives:
+    - "Internalizar o ciclo Red-Green-Refactor como hábito de codificação"
+    - "Escrever testes antes do código de produção (test-first)"
+    - "Atingir cobertura ≥ 80% ao final da kata"
+    - "Refatorar código sem quebrar testes existentes"
+  facilitation_level: "Intermediário"
+  accessibility_compliance:
+    - "OAP-1.0"
+
+  duration_minutes:
+    setup_briefing: 10
+    demonstration: 10
+    guided_practice: 20
+    autonomous_practice: 15
+    retrospective: 5
+    total: 60
+
+  physical_requirements:
+    space_m2_min: 10
+    layout: "Sala com computadores (1 por participante ou pair); IDE configurada"
+
+  materials:
+    - item: "Computadores com IDE (VS Code, IntelliJ, PyCharm)"
+      quantity_min: 4
+    - item: "Framework de testes instalado (JUnit/pytest/Jest)"
+      quantity_min: 4
+    - item: "Kata definida (arquivo de descrição ART-09A)"
+      quantity_min: 1
+    - item: "Poster visual do ciclo Red-Green-Refactor"
+      quantity_min: 1
+
+  scaffolding:
+    rules:
+      - "Nunca escrever linha de produção sem teste falhando antes"
+      - "Green = implementar o mínimo possível para passar — sem antecipar"
+      - "Refactor = melhorar estrutura sem mudar comportamento — testes devem continuar passando"
+      - "Commit a cada ciclo Red-Green-Refactor completo"
+    steps:
+      - step: 1
+        phase: "Setup e Briefing"
+        duration_min: 10
+        description: "Configurar ambiente. Apresentar kata. Explicar ciclo com poster visual."
+      - step: 2
+        phase: "Demonstração ao Vivo"
+        duration_min: 10
+        description: "Facilitador implementa primeiro requisito ao vivo comentando cada passo do ciclo."
+      - step: 3
+        phase: "Prática Guiada"
+        duration_min: 20
+        description: "Participantes implementam próximos requisitos. Facilitador circula e oferece dicas."
+      - step: 4
+        phase: "Prática Autônoma"
+        duration_min: 15
+        description: "Participantes continuam sem intervenção do facilitador."
+      - step: 5
+        phase: "Retrospectiva da Kata"
+        duration_min: 5
+        key_question: "Quando você quis pular o teste? O que te impediu?"
+        core_lesson: "TDD é disciplina, não velocidade — o teste é o design"
+
+  effectiveness_kpis:
+    - id: "KPI-1"
+      name: "Cobertura de testes alcançada (%)"
+      measurement: "Ferramenta de cobertura do framework (pytest-cov, JaCoCo, etc.)"
+      construct: "Aprendizado (E1.x)"
+    - id: "KPI-2"
+      name: "Número de ciclos Red-Green-Refactor completos"
+      measurement: "Observação do facilitador e contagem de commits"
+      construct: "Confiança (E2.x)"
+
+artifacts:
+  - id: "ART-09A"
+    name: "Descrição do Kata"
+    type: Markdown
+    path: "DIN-TDD-001/descricao_kata.md"
+  - id: "ART-09B"
+    name: "Guia do Facilitador"
+    type: Markdown
+    path: "DIN-TDD-001/guia_facilitador.md"
+  - id: "ART-09C"
+    name: "Ficha KPI"
+    type: XLSX
+    path: "DIN-TDD-001/registro_kpi.xlsx"
+
+quality:
+  validation_status: "Em validação interna"
+  quality_level: "medio"
+  reviewed_by: "Equipe de Qualidade e facilitadores internos"
+  version_history:
+    - version: "1.0.0"
+      date: "2026-05"
+      description: "Versão inicial estruturada em RAS 3.0."
+  references:
+    - "Osherove, R. (2009). The Art of Unit Testing. Manning Publications."
+    - "Ren, X. et al. (2023). TDD, engagement in activity, and maintainability. IET Software."
+    - "Ju, A. et al. (2021). ICSE 2021, pp.613–623."
+    - "Hause, M. et al. (2025). RAS 3.0. INCOSE INSIGHT, Vol.28/5."

@@ -1,0 +1,91 @@
+{
+  "profileType": "onboarding-accessibility",
+  "profileVersion": "OAP-1.0",
+  "assetProfileID": "OAP-DIN-FEED-001-v1",
+  "assetID": "DIN-FEED-001",
+  "adherenceDate": "2026-05-05",
+
+  "coreRASCompliance": {
+    "classification": true,
+    "solution": true,
+    "usage": true,
+    "relatedAssets": true
+  },
+
+  "pedagogy": {
+    "primaryConstruct": "E3.x + E2.x",
+    "primaryConstructDescription": "Socialização (Comunicação Profissional) + Confiança (Abertura a Feedback)",
+    "primaryConstructSource": "ICSE 2021 — Tabela III, p.618",
+    "onboardingStrategy": "Practice-Based Learning",
+    "onboardingStrategySource": "ICSE 2021 §III-B3",
+    "methodology": [
+      "RolePlaying",
+      "PraticaOrientada",
+      "ModeloPendleton"
+    ],
+    "taskComplexity": "medium",
+    "taskComplexityRationale": "Exige empatia e escuta ativa; cartões com roteiro eliminam necessidade de improvisar estrutura",
+    "independenceMilestone": "Participante conduz feedback completo (4 passos, ordem correta) sem auxílio do facilitador",
+    "independenceMilestoneSource": "ICSE 2021 §III-A, p.617",
+    "facilitatorSupportLevel": "active",
+    "facilitatorSupportRationale": "Demonstra exemplo ao vivo; observa duplas; intervém quando a ordem dos passos é quebrada"
+  },
+
+  "accessibility": {
+    "cardScaffoldAdaptations": {
+      "description": "Cartões com 4 passos numerados permanecem visíveis durante toda a prática",
+      "mandatory_adaptations": [
+        "Cartão Pendleton disponível para cada participante durante toda a sessão — não recolher",
+        "Passos numerados e impressos com a pergunta completa — participante lê do cartão, não memoriza"
+      ]
+    },
+    "literalityAdaptations": {
+      "description": "Cenários escritos com linguagem direta; perguntas dos 4 passos sem metáforas ou ambiguidade",
+      "mandatory_adaptations": [
+        "Cenários de feedback com situação concreta descrita em linguagem direta (sem 'imagine que...')",
+        "Cada passo tem uma pergunta literal e única — sem interpretação necessária"
+      ]
+    },
+    "writtenOptionAdaptations": {
+      "description": "Opção de escrever respostas antes de falar em voz alta",
+      "mandatory_adaptations": [
+        "Participantes podem escrever suas respostas no papel antes de verbalizar",
+        "Facilitador oferece 30 segundos de escrita antes de cada passo para todos"
+      ]
+    },
+    "sensoryTriggers": [
+      "Receber feedback inesperado sobre comportamento ou desempenho",
+      "Pressão de responder imediatamente sem tempo para processar"
+    ],
+    "inputVariability": [
+      "Prática em duplas para participantes que preferem menor exposição",
+      "Escrita antes de fala — resposta registrada no papel antes de verbalizar",
+      "Online: feedback digitado em chat antes de ler em voz alta"
+    ],
+    "literalLanguage": true,
+    "literalLanguageNote": "4 passos são perguntas literais com resposta esperada explícita; participante sabe exatamente o que dizer em cada passo",
+    "structuralPredictability": true,
+    "structuralPredictabilityNote": "Sequência invariável de 4 passos; cartão sempre visível; quem fala em cada passo é explicitamente definido"
+  },
+
+  "lineage": {
+    "parentAssetID": null,
+    "lineageType": "root",
+    "assetType": "dinamica_fisica_ou_digital",
+    "variants": [
+      {
+        "variantID": "DIN-FEED-001-VAR1",
+        "description": "Foco em feedback positivo — praticar apenas passo 1 nas primeiras sessões; introduzir 2-4 gradualmente"
+      },
+      {
+        "variantID": "DIN-FEED-001-VAR2",
+        "description": "Cenários da empresa — substituir cenários genéricos por situações reais do contexto organizacional"
+      },
+      {
+        "variantID": "DIN-FEED-001-VAR3",
+        "description": "Online (Miro/Mentimeter) — cenários em cards digitais; feedback digitado antes de verbalizado"
+      }
+    ],
+    "derivedAssets": []
+  }
+}

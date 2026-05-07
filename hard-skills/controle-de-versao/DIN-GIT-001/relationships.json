@@ -1,0 +1,100 @@
+{
+  "asset_id": "DIN-GIT-001",
+  "spec_section": "related-asset — Sec.6.4.13 — Constraint 8",
+
+  "related_assets": [
+    {
+      "asset_id": "DIN-REV-001",
+      "name": "CRSG",
+      "relationship_type": "similar",
+      "direction": "bidirecional",
+      "justification": "Code review é o contexto natural que gera conflitos — DIN-REV-001 complementa DIN-GIT-001 com práticas de revisão formal.",
+      "recommended_sequence": "DIN-GIT-001 antes de DIN-REV-001"
+    },
+    {
+      "asset_id": "DIN-TDD-001",
+      "name": "TDD Kata",
+      "relationship_type": "similar",
+      "direction": "bidirecional",
+      "justification": "TDD estabelece contrato de testes que reduz conflitos de integração; foco comum em qualidade de código.",
+      "recommended_sequence": "DIN-GIT-001 e DIN-REV-001 antes de DIN-TDD-001"
+    }
+  ],
+
+  "prerequisite_assets": [],
+
+  "suggested_progression": [
+    {
+      "order": 1,
+      "asset_id": "DIN-AGIL-001",
+      "moment": "inicio",
+      "goal": "Introduzir fluxo vs. ocupação e segurança psicológica"
+    },
+    {
+      "order": 2,
+      "asset_id": "DIN-AGIL-002",
+      "moment": "inicio",
+      "goal": "Aprofundar integração modular e comunicação entre equipes"
+    },
+    {
+      "order": 3,
+      "asset_id": "DIN-PLAN-001",
+      "moment": "inicio",
+      "goal": "Praticar estimativa colaborativa de esforço"
+    },
+    {
+      "order": 4,
+      "asset_id": "DIN-COM-001",
+      "moment": "meio",
+      "goal": "Desenvolver comunicação precisa e confiança em pares"
+    },
+    {
+      "order": 5,
+      "asset_id": "DIN-SOFT-001",
+      "moment": "meio",
+      "goal": "Consolidar empatia técnica Dev/QA"
+    },
+    {
+      "order": 6,
+      "asset_id": "DIN-GIT-001",
+      "moment": "meio",
+      "goal": "Praticar resolução de conflitos de versionamento em contexto colaborativo"
+    },
+    {
+      "order": 7,
+      "asset_id": "DIN-REV-001",
+      "moment": "meio",
+      "goal": "Desenvolver habilidades de code review e feedback técnico"
+    },
+    {
+      "order": 8,
+      "asset_id": "DIN-TDD-001",
+      "moment": "meio",
+      "goal": "Disciplinar ciclo TDD e cobertura de testes"
+    },
+    {
+      "order": 9,
+      "asset_id": "DIN-MAND-001",
+      "moment": "fim",
+      "goal": "Desenvolver autoadvocacia e comunicação assertiva"
+    },
+    {
+      "order": 10,
+      "asset_id": "DIN-RETRO-001",
+      "moment": "fim",
+      "goal": "Consolidar cultura de melhoria contínua"
+    },
+    {
+      "order": 11,
+      "asset_id": "DIN-FEED-001",
+      "moment": "fim",
+      "goal": "Praticar feedback estruturado"
+    },
+    {
+      "order": 12,
+      "asset_id": "DIN-PSAF-001",
+      "moment": "fim",
+      "goal": "Medir e consolidar segurança psicológica da equipe"
+    }
+  ]
+}

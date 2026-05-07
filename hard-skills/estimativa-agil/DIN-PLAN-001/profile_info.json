@@ -1,0 +1,90 @@
+{
+  "profileType": "onboarding-accessibility",
+  "profileVersion": "OAP-1.0",
+  "assetProfileID": "OAP-DIN-PLAN-001-v1",
+  "assetID": "DIN-PLAN-001",
+  "adherenceDate": "2026-05-05",
+
+  "coreRASCompliance": {
+    "classification": true,
+    "solution": true,
+    "usage": true,
+    "relatedAssets": true
+  },
+
+  "pedagogy": {
+    "primaryConstruct": "E1.x + E2.x",
+    "primaryConstructDescription": "Aprendizado (Calibração de Esforço) + Confiança (Consenso Técnico)",
+    "primaryConstructSource": "ICSE 2021 — Tabela III, p.618",
+    "onboardingStrategy": "Problem-Based Learning",
+    "onboardingStrategySource": "ICSE 2021 §III-B3",
+    "methodology": [
+      "Gamification",
+      "Simulacao"
+    ],
+    "taskComplexity": "medium",
+    "taskComplexityRationale": "Exige negociação e tomada de decisão coletiva; regras claras reduzem carga cognitiva",
+    "independenceMilestone": "Participante contribui com estimativa fundamentada e justifica tecnicamente sem auxílio",
+    "independenceMilestoneSource": "ICSE 2021 §III-A p.617",
+    "facilitatorSupportLevel": "active",
+    "facilitatorSupportRationale": "Modera discussões e garante simultaneidade da revelação"
+  },
+
+  "accessibility": {
+    "auditoryAdaptations": {
+      "description": "Revelar E escrever o valor consensual no quadro simultaneamente",
+      "mandatory_adaptations": [
+        "Anunciar verbalmente E escrever no quadro o valor consensual de cada story",
+        "Sinal visual (cartão ou gesto) para revelar cartas — além do sinal verbal"
+      ]
+    },
+    "visualAdaptations": {
+      "description": "Baralho físico e quadro como âncoras visuais do processo",
+      "mandatory_adaptations": [
+        "Escrever todas as estimativas visíveis no quadro antes da discussão",
+        "Distribuir agenda de stories por escrito antes da reunião"
+      ]
+    },
+    "socialCommunicationAdaptations": {
+      "description": "Regra de silêncio antes da revelação reduz pressão social de seguir a maioria",
+      "mandatory_adaptations": [
+        "Garantir silêncio completo durante a seleção da carta",
+        "Somente quem estimou outliers precisa falar — participação vocal não é obrigatória para todos"
+      ]
+    },
+    "sensoryTriggers": [
+      "Pressão de justificar estimativa diferente da maioria",
+      "Discussões técnicas longas sem estrutura clara"
+    ],
+    "inputVariability": [
+      "Participação via carta física sem fala (estimativa silenciosa)",
+      "Participação via ferramenta digital (PlanITPoker, Miro) para remote",
+      "Registro escrito de justificativa antes de verbalizar"
+    ],
+    "literalLanguage": true,
+    "literalLanguageNote": "Escala Fibonacci com valores literais; cada carta tem valor numérico exato — sem interpretação subjetiva além da relativa",
+    "structuralPredictability": true,
+    "structuralPredictabilityNote": "Processo fixo por rodada: apresentação → silêncio → revelação → discussão (se necessário) → consenso; agenda distribuída antes"
+  },
+
+  "lineage": {
+    "parentAssetID": null,
+    "lineageType": "root",
+    "assetType": "dinamica_presencial",
+    "variants": [
+      {
+        "variantID": "DIN-PLAN-001-VAR1",
+        "description": "Baralho T-Shirt (XS/S/M/L/XL) — para times iniciantes em estimativa"
+      },
+      {
+        "variantID": "DIN-PLAN-001-VAR2",
+        "description": "Versão online (Miro/PlanITPoker) — para remote onboarding"
+      },
+      {
+        "variantID": "DIN-PLAN-001-VAR3",
+        "description": "Estimativa de tarefas técnicas (não stories) — para refinamento técnico"
+      }
+    ],
+    "derivedAssets": []
+  }
+}

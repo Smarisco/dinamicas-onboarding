@@ -1,0 +1,195 @@
+# ═══════════════════════════════════════════════════════
+# params.yaml — DIN-COM-001 — O Campo Minado
+# Especificação: RAS 3.0 (INCOSE INSIGHT Vol.28/5, 2025)
+# ═══════════════════════════════════════════════════════
+
+identification:
+  asset_id: "DIN-COM-001"
+  name: "O Campo Minado (The Minefield)"
+  version: "RAS-3.0"
+  repository_path: "soft-skills/comunicacao/DIN-COM-001/"
+  author: "Equipe RAS — ras-dinamicas@institucional.br"
+  last_updated: "2026-05-05"
+
+classification:
+  domain: "soft-skills"
+  subdomain: "comunicacao"
+  complexity: "Baixa a Média"
+  duration_minutes: 40
+  group_size: "8-12"
+  tags:
+    - "Pair Programming"
+    - "Comunicação"
+    - "Debugging"
+    - "Mentoria"
+    - "Onboarding"
+  hard_skills:
+    - "Algoritmos (passo a passo)"
+    - "Debugging em tempo real"
+  soft_skills:
+    - "Escuta Ativa"
+    - "Clareza na Comunicação"
+    - "Empatia"
+  neurodiversity_summary: >
+    Instruções são explicitamente literais ("2 passos à frente" = exatamente 2 passos),
+    o que reduz ambiguidade e atende ao perfil de literalidade do TEA (Ju et al., ICSE
+    2021 §III-B1). O Cartão de Comandos (ART-03D) fornece vocabulário pré-definido,
+    eliminando improvisação verbal. A opção de substituir venda por óculos opacos
+    reduz estímulo ansiogênico. A versão "escrita prévia" elimina pressão de
+    comunicação oral em tempo real, acomodando perfis com comunicação social elevada.
+  agile_context:
+    methodology: "Scrum / Pair Programming"
+    sprint_moment: "meio"
+    use_scenario:
+      - "Onboarding de dev júnior"
+      - "Workshop de pair programming"
+      - "Treinamento de mentoria técnica"
+  target_audience:
+    roles:
+      - "Desenvolvedor Júnior"
+      - "Desenvolvedor Sênior"
+      - "Tech Lead"
+      - "Facilitador de Pair Programming"
+    team_size_min: 8
+    team_size_max: 12
+    prerequisites: "nenhum"
+  business_problem: >
+    Instruções ambíguas em code review; devs júniors isolados sem pedir ajuda.
+    No onboarding: dificuldade de integração social por comunicação indireta (E3.2).
+
+usage:
+  target_roles:
+    - "Desenvolvedor Júnior"
+    - "Desenvolvedor Sênior"
+    - "Tech Lead"
+    - "Facilitador de Pair Programming"
+  prerequisites: []
+  learning_objectives:
+    - "Formular instruções não-ambíguas em contexto de pair programming"
+    - "Desenvolver escuta ativa e execução literal de comandos"
+    - "Construir confiança mútua entre pares Sênior/Júnior"
+    - "Relacionar ambiguidade de comunicação a bugs em produção"
+  facilitation_level: "Iniciante"
+  accessibility_compliance:
+    - "OAP-1.0"
+
+  duration_minutes:
+    setup: 5
+    briefing: 5
+    traversal_role1: 10
+    role_inversion: 2
+    traversal_role2: 10
+    debriefing: 10
+    total: 40
+
+  physical_requirements:
+    space_m2_min: 30
+    layout: "Sala com piso plano sem mobiliário no centro; fita delimitando partida e chegada"
+
+  materials:
+    - item: "Objetos leves (garrafas, cones, caixas)"
+      quantity_min: 10
+    - item: "Vendas ou óculos opacos (opcional)"
+      quantity_min: 4
+    - item: "Fita adesiva colorida"
+      quantity_min: 1
+    - item: "Cronômetro"
+      quantity_min: 1
+    - item: "Cartão de Comandos (ART-03D) impresso"
+      quantity_min: 6
+
+  scaffolding:
+    rules:
+      - "Sistema executa as instruções literalmente — sem interpretação"
+      - "Programador guia apenas verbalmente — sem tocar o Sistema"
+      - "Objeto tocado pelo pé = colisão (bug) — registrar na ficha"
+      - "Programador permanece fora do campo durante toda a travessia"
+    steps:
+      - step: 1
+        phase: "Montagem do Campo"
+        duration_min: 5
+        description: "Distribuir 10–15 objetos aleatoriamente. Marcar partida e chegada com fita."
+      - step: 2
+        phase: "Briefing"
+        duration_min: 5
+        description: "Explicar papéis (Sistema/Programador). Distribuir Cartão de Comandos. Reforçar literalidade das instruções."
+      - step: 3
+        phase: "Travessia — Papel 1"
+        duration_min: 10
+        description: "Sistema entra vendado (ou com óculos). Programador guia verbalmente. Registrar colisões."
+      - step: 4
+        phase: "Inversão de Papéis"
+        duration_min: 2
+        description: "Trocar papéis sem reorganizar o campo."
+      - step: 5
+        phase: "Travessia — Papel 2"
+        duration_min: 10
+        description: "Repetir com papéis invertidos. Registrar colisões."
+      - step: 6
+        phase: "Debriefing"
+        duration_min: 10
+        key_question: "Quantas instruções foram ambíguas? O que causou mais colisões?"
+        core_lesson: "Comunicação precisa elimina bugs — ambiguidade tem custo mensurável"
+
+  effectiveness_kpis:
+    - id: "KPI-1"
+      name: "Colisões com objetos (bugs)"
+      measurement: "Contagem direta na Ficha KPI"
+      construct: "Aprendizado (E1.2)"
+    - id: "KPI-2"
+      name: "Tempo de travessia (s)"
+      measurement: "Cronômetro por travessia"
+      construct: "Confiança (E2.5)"
+    - id: "KPI-3"
+      name: "Delta colisões Papel 1 vs. Papel 2"
+      measurement: "Comparação das contagens antes e após inversão"
+      construct: "Aprendizado"
+    - id: "KPI-4"
+      name: "Tempo até 1ª execução sem hesitação"
+      measurement: "Cronômetro — facilitador registra"
+      construct: "Socialização (E3.1)"
+
+artifacts:
+  - id: "ART-03A"
+    name: "Roteiro do Facilitador"
+    type: PDF
+    path: "DIN-COM-001/roteiro_facilitador.pdf"
+  - id: "ART-03B"
+    name: "Mapa do Campo"
+    type: PDF
+    path: "DIN-COM-001/mapa_campo.pdf"
+  - id: "ART-03C"
+    name: "Ficha KPI"
+    type: XLSX
+    path: "DIN-COM-001/registro_kpi.xlsx"
+  - id: "ART-03D"
+    name: "Cartão de Comandos Válidos"
+    type: PDF
+    path: "DIN-COM-001/comandos_validos.pdf"
+  - id: "ART-03E"
+    name: "Customization Guide"
+    type: Markdown
+    path: "DIN-COM-001/customization_guide.md"
+
+quality:
+  validation_status: "Validado em treinamentos de Pair Programming"
+  quality_level: "alto"
+  reviewed_by: "Facilitadores de grupo e coaching; v1.3.0 auditada 2026-04-28"
+  version_history:
+    - version: "1.0.0"
+      date: "2025-01"
+      description: "Versão inicial."
+    - version: "1.1.0"
+      date: "2026-04"
+      description: "Auditoria RAS v3.1 — customization, params, tags, KPIs."
+    - version: "1.2.0"
+      date: "2026-04"
+      description: "v4.0 — Metadados ICSE 2021."
+    - version: "1.3.0"
+      date: "2026-05"
+      description: "v4.1 — Metadados RAS 3.0 + Profile OAP-1.0."
+  references:
+    - "Newstrom, J.W.; Scannell, E.E. (1980). Games Trainers Play. McGraw-Hill."
+    - "Robbins, S.P.; Judge, T.A. (2003). Organizational Behavior, 10th ed. Pearson."
+    - "Ju, A. et al. (2021). ICSE 2021, pp.613–623."
+    - "Hause, M. et al. (2025). RAS 3.0. INCOSE INSIGHT, Vol.28/5."

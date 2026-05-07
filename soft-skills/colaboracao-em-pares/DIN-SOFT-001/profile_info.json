@@ -1,0 +1,94 @@
+{
+  "profileType": "onboarding-accessibility",
+  "profileVersion": "OAP-1.0",
+  "assetProfileID": "OAP-DIN-SOFT-001-v1",
+  "assetID": "DIN-SOFT-001",
+  "adherenceDate": "2026-05-05",
+
+  "coreRASCompliance": {
+    "classification": true,
+    "solution": true,
+    "usage": true,
+    "relatedAssets": true
+  },
+
+  "pedagogy": {
+    "primaryConstruct": "E3.1 + E1.4",
+    "primaryConstructDescription": "Socialização (Integração Social) + Aprendizado (Big Picture / Empatia Técnica)",
+    "primaryConstructSource": "ICSE 2021 — Tabela III, p.618",
+    "onboardingStrategy": "Exploration-Based",
+    "onboardingStrategySource": "ICSE 2021 §III-B3 p.620",
+    "methodology": [
+      "RolePlaying",
+      "DebateEstruturado"
+    ],
+    "taskComplexity": "medium_to_high",
+    "taskComplexityRationale": "Exige argumentação lógica para posição contrária à própria e flexibilidade cognitiva para inversão de papéis",
+    "independenceMilestone": "Participante articula argumentos técnicos válidos para posição oposta sem auxílio do facilitador",
+    "independenceMilestoneSource": "ICSE 2021 §III-A p.617",
+    "facilitatorSupportLevel": "active",
+    "facilitatorSupportRationale": "Media conflitos, mantém papéis e garante tom técnico — ICSE 2021 §III-A1 p.618"
+  },
+
+  "accessibility": {
+    "auditoryAdaptations": {
+      "description": "Bastão da fala garante turnos explícitos; elimina sobreposição de vozes",
+      "mandatory_adaptations": [
+        "Usar bastão da fala físico (objeto passado de mão em mão) para sinalizar quem pode falar",
+        "Facilitador sinaliza visualmente (cartão colorido) quando o tempo de cada grupo esgota"
+      ]
+    },
+    "visualAdaptations": {
+      "description": "Post-its no quadro como âncora visual dos argumentos construídos",
+      "mandatory_adaptations": [
+        "Cada argumento registrado em post-it separado no quadro antes do debate",
+        "Quadro dividido visualmente: Grupo A (esquerda) vs. Grupo B (direita)"
+      ]
+    },
+    "socialCommunicationAdaptations": {
+      "description": "Versão silenciosa elimina pressão de comunicação oral em tempo real",
+      "mandatory_adaptations": [
+        "Oferecer versão silenciosa (post-its no quadro) para perfis com ansiedade social alta",
+        "Explicar 'advogado do diabo' com exemplo concreto antes de iniciar — perfis com rigidez cognitiva precisam desta ancoragem"
+      ],
+      "optional_adaptations": [
+        "Permitir que participante escreva argumentos em papel antes de falar oralmente"
+      ]
+    },
+    "sensoryTriggers": [
+      "Debate acalorado pode escalar para conflito interpessoal real",
+      "Pressão de defender posição contrária à opinião pessoal",
+      "Múltiplas vozes simultâneas sem bastão da fala"
+    ],
+    "inputVariability": [
+      "Participação via post-its (sem fala oral)",
+      "Participação como observador/registrador da Matriz de Argumentos",
+      "Papel de porta-voz do grupo (1 pessoa fala, resto apoia com post-its)"
+    ],
+    "literalLanguage": true,
+    "literalLanguageNote": "Explicar 'advogado do diabo' literalmente: 'Você vai defender a posição escrita no cartão, mesmo que não concorde com ela pessoalmente'",
+    "structuralPredictability": true,
+    "structuralPredictabilityNote": "5 fases anunciadas antes de começar; bastão garante alternância previsível; tempo de cada fase exibido no quadro"
+  },
+
+  "lineage": {
+    "parentAssetID": null,
+    "lineageType": "root",
+    "assetType": "dinamica_presencial",
+    "variants": [
+      {
+        "variantID": "DIN-SOFT-001-VAR1",
+        "description": "Versão GDPR/LGPD — cenário de privacidade de dados vs. funcionalidade"
+      },
+      {
+        "variantID": "DIN-SOFT-001-VAR2",
+        "description": "Versão dívida técnica — Refatorar agora vs. feature nova primeiro"
+      },
+      {
+        "variantID": "DIN-SOFT-001-VAR3",
+        "description": "Versão silenciosa — todos os argumentos em post-its, sem fala oral"
+      }
+    ],
+    "derivedAssets": []
+  }
+}

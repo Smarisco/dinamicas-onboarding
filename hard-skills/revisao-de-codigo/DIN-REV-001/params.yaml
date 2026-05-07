@@ -1,0 +1,165 @@
+# ═══════════════════════════════════════════════════════
+# params.yaml — DIN-REV-001 — CRSG (Code Review Simulation Game)
+# Especificação: RAS 3.0 (INCOSE INSIGHT Vol.28/5, 2025)
+# ═══════════════════════════════════════════════════════
+
+identification:
+  asset_id: "DIN-REV-001"
+  name: "CRSG — Code Review Simulation Game"
+  version: "RAS-3.0"
+  repository_path: "hard-skills/revisao-de-codigo/DIN-REV-001/"
+  author: "Equipe RAS — ras-dinamicas@institucional.br"
+  last_updated: "2026-05-05"
+
+classification:
+  domain: "hard-skills"
+  subdomain: "revisao-de-codigo"
+  complexity: "Média"
+  duration_minutes: 55
+  group_size: "2-6"
+  tags:
+    - "Revisão de Código"
+    - "Detecção de Defeitos"
+    - "Refatoração"
+    - "Feedback Técnico"
+    - "Comunicação Construtiva"
+    - "Atenção a Detalhe"
+    - "Onboarding"
+  hard_skills:
+    - "Revisão de Código"
+    - "Detecção de Defeitos"
+    - "Refatoração"
+  soft_skills:
+    - "Feedback Técnico"
+    - "Comunicação Construtiva"
+    - "Atenção a Detalhe"
+  neurodiversity_summary: >
+    Checklists explícitos com categorias fixas (bug, code smell, segurança, performance)
+    eliminam a necessidade de categorização espontânea, reduzindo carga cognitiva (ICSE
+    2021 §III-B3). Código destacado visualmente (syntax highlighting) facilita atenção
+    ao detalhe. Processo estruturado (ler → identificar → categorizar → comentar) oferece
+    alta previsibilidade. Revisão individual antes da coletiva permite preparo sem
+    exposição imediata.
+  agile_context:
+    methodology: "Engenharia de Software / Qualidade"
+    sprint_moment: "meio"
+    use_scenario:
+      - "Workshops de code review"
+      - "Onboarding técnico de desenvolvedores"
+      - "Treinamentos de qualidade de software"
+  target_audience:
+    roles:
+      - "Desenvolvedor"
+      - "QA / Tester"
+      - "Tech Lead"
+      - "Engenheiro de Software em Onboarding"
+    team_size_min: 2
+    team_size_max: 6
+    prerequisites: "Conhecimento básico de programação"
+  business_problem: >
+    Code reviews ineficazes com feedback pouco construtivo; dificuldade em entender
+    a importância do code review no processo de qualidade (E2.x).
+
+usage:
+  target_roles:
+    - "Desenvolvedor"
+    - "QA / Tester"
+    - "Tech Lead"
+    - "Engenheiro de Software em Onboarding"
+  prerequisites:
+    - "Conhecimento básico de programação"
+  learning_objectives:
+    - "Identificar sistematicamente bugs, code smells e problemas de segurança em código"
+    - "Redigir comentários de revisão construtivos e acionáveis"
+    - "Usar checklists para aumentar cobertura da revisão"
+    - "Distinguir entre feedback destrutivo e construtivo"
+  facilitation_level: "Intermediário"
+  accessibility_compliance:
+    - "OAP-1.0"
+
+  duration_minutes:
+    setup_briefing: 10
+    individual_review: 20
+    collective_review: 15
+    comment_practice: 5
+    debriefing: 5
+    total: 55
+
+  physical_requirements:
+    space_m2_min: 10
+    layout: "Sala com computadores ou projetor para revisão coletiva"
+
+  materials:
+    - item: "Códigos-fonte com defeitos (ART-08A)"
+      quantity_min: 6
+    - item: "Checklists de revisão (ART-08B)"
+      quantity_min: 6
+    - item: "Computadores ou projetor"
+      quantity_min: 1
+    - item: "Canetas e papel (para anotações)"
+      quantity_min: 6
+
+  scaffolding:
+    steps:
+      - step: 1
+        phase: "Setup e Briefing"
+        duration_min: 10
+        description: "Distribuir código e checklists. Explicar objetivo e tipos de defeito. Mostrar exemplo de comentário construtivo vs. destrutivo."
+      - step: 2
+        phase: "Revisão Individual / Dupla"
+        duration_min: 20
+        description: "Usar checklist para identificar defeitos. Escrever comentário para cada defeito encontrado."
+      - step: 3
+        phase: "Revisão Coletiva"
+        duration_min: 15
+        description: "Projetar código. Percorrer linha a linha. Comparar comentários — qual versão é mais construtiva?"
+      - step: 4
+        phase: "Prática de Comentário"
+        duration_min: 5
+        description: "Reformular 1 comentário destrutivo em construtivo com estrutura: O que → Por que → Como melhorar."
+      - step: 5
+        phase: "Debriefing"
+        duration_min: 5
+        key_question: "Quais defeitos ninguém encontrou? O que isso nos diz sobre nossos pontos cegos?"
+        core_lesson: "Code review é uma skill — checklists e prática aumentam cobertura"
+
+  effectiveness_kpis:
+    - id: "KPI-1"
+      name: "Número de defeitos encontrados"
+      measurement: "Contagem na Ficha KPI comparada ao gabarito do facilitador"
+      construct: "Aprendizado (E1.x)"
+    - id: "KPI-2"
+      name: "Qualidade do feedback escrito (1–5)"
+      measurement: "Avaliação do facilitador usando rubrica: acionável? específico? construtivo?"
+      construct: "Confiança (E2.x)"
+
+artifacts:
+  - id: "ART-08A"
+    name: "Códigos-fonte com defeitos"
+    type: TXT
+    path: "DIN-REV-001/codigos_defeitos.txt"
+  - id: "ART-08B"
+    name: "Checklists de revisão"
+    type: Markdown
+    path: "DIN-REV-001/checklists_revisao.md"
+  - id: "ART-08C"
+    name: "Guia do Facilitador"
+    type: Markdown
+    path: "DIN-REV-001/guia_facilitador.md"
+  - id: "ART-08D"
+    name: "Ficha KPI"
+    type: XLSX
+    path: "DIN-REV-001/registro_kpi.xlsx"
+
+quality:
+  validation_status: "Em validação interna"
+  quality_level: "medio"
+  reviewed_by: "Equipe de Qualidade e facilitadores internos"
+  version_history:
+    - version: "1.0.0"
+      date: "2026-05"
+      description: "Versão inicial estruturada em RAS 3.0."
+  references:
+    - "Ardic, T. et al. (2025). CRSG — Code Review Simulation Game."
+    - "Ju, A. et al. (2021). ICSE 2021, pp.613–623."
+    - "Hause, M. et al. (2025). RAS 3.0. INCOSE INSIGHT, Vol.28/5."

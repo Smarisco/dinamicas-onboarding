@@ -1,0 +1,164 @@
+# ═══════════════════════════════════════════════════════
+# params.yaml — DIN-PLAN-001 — Planning Poker
+# Especificação: RAS 3.0 (INCOSE INSIGHT Vol.28/5, 2025)
+# ═══════════════════════════════════════════════════════
+
+identification:
+  asset_id: "DIN-PLAN-001"
+  name: "Planning Poker"
+  version: "RAS-3.0"
+  repository_path: "hard-skills/estimativa-agil/DIN-PLAN-001/"
+  author: "Equipe RAS — ras-dinamicas@institucional.br"
+  last_updated: "2026-05-05"
+
+classification:
+  domain: "hard-skills"
+  subdomain: "estimativa-agil"
+  complexity: "Média"
+  duration_minutes: 60
+  group_size: "3-9"
+  tags:
+    - "Estimativa de Esforço"
+    - "Gestão de Backlog"
+    - "Story Points"
+    - "Negociação"
+    - "Escuta Ativa"
+    - "Tomada de Decisão Coletiva"
+    - "Onboarding"
+  hard_skills:
+    - "Estimativa de Esforço"
+    - "Gestão de Backlog"
+    - "Story Points"
+  soft_skills:
+    - "Negociação"
+    - "Escuta Ativa"
+    - "Tomada de Decisão Coletiva"
+  neurodiversity_summary: >
+    O processo estruturado (PO apresenta → silêncio → revelação simultânea → discussão)
+    oferece alta previsibilidade, alinhada à estratégia Problem-Based Learning (ICSE 2021
+    §III-B3). Baralhos físicos permitem participação sem fala inicial. Agenda de stories
+    distribuída com antecedência elimina surpresa e permite preparo. Anunciar E escrever
+    o valor consensual no quadro simultaneamente acomoda perfis auditivos e visuais.
+    A regra de silêncio antes da revelação reduz pressão de comunicação social.
+  agile_context:
+    methodology: "Scrum"
+    sprint_moment: "inicio"
+    use_scenario:
+      - "Reuniões de planejamento de sprint"
+      - "Workshops de estimativa para times novos"
+      - "Onboarding técnico de desenvolvedores"
+  target_audience:
+    roles:
+      - "Desenvolvedor"
+      - "Scrum Master"
+      - "Product Owner"
+      - "Tech Lead"
+    team_size_min: 3
+    team_size_max: 9
+    prerequisites: "Conhecimento básico de Scrum e Story Points"
+  business_problem: >
+    Estimativas inconsistentes e falta de consenso técnico na equipe. No onboarding:
+    dificuldade em compreender o esforço relativo de tarefas técnicas (E1.x).
+
+usage:
+  target_roles:
+    - "Desenvolvedor"
+    - "Scrum Master"
+    - "Product Owner"
+    - "Tech Lead"
+  prerequisites:
+    - "Conhecimento básico de Scrum e Story Points"
+  learning_objectives:
+    - "Calibrar estimativas relativas de esforço usando escala Fibonacci"
+    - "Identificar divergências técnicas entre membros do time e resolvê-las por discussão"
+    - "Praticar revelação simultânea para evitar ancoragem cognitiva"
+    - "Desenvolver alinhamento técnico sobre complexidade das tarefas"
+  facilitation_level: "Iniciante"
+  accessibility_compliance:
+    - "OAP-1.0"
+
+  duration_minutes:
+    setup_briefing: 10
+    rounds: 40
+    retrospective: 10
+    total: 60
+
+  physical_requirements:
+    space_m2_min: 10
+    layout: "Sala de reunião com mesa central; quadro branco visível para todos"
+
+  materials:
+    - item: "Baralho Planning Poker (1 por participante)"
+      quantity_min: 9
+    - item: "Lista de User Stories para estimar"
+      quantity_min: 1
+    - item: "Quadro branco + marcadores"
+      quantity_min: 1
+    - item: "Cronômetro"
+      quantity_min: 1
+    - item: "Ficha KPI (ART-06C)"
+      quantity_min: 1
+
+  scaffolding:
+    rules:
+      - "Todos revelam simultaneamente — ninguém revela antes do sinal"
+      - "PO não revela estimativa própria antes da votação"
+      - "Apenas quem estimou o menor e o maior valor explica o raciocínio após revelação"
+      - "Máximo de 3 rodadas por story — se sem consenso, PO decide"
+    steps:
+      - step: 1
+        phase: "Setup e Briefing"
+        duration_min: 10
+        description: "Distribuir baralhos. Explicar escala Fibonacci, ?, ∞ e ☕. Distribuir lista de stories."
+      - step: 2
+        phase: "Rodadas de Estimativa"
+        duration_min: 40
+        description: "5 rodadas: PO apresenta story → silêncio → revelação simultânea → discussão (se divergência) → consenso."
+        sprint_structure:
+          presentation_min: 1
+          silent_selection_min: 1
+          discussion_min: 5
+          consensus_min: 1
+      - step: 3
+        phase: "Retrospectiva da Estimativa"
+        duration_min: 10
+        key_question: "O que as divergências revelaram sobre a complexidade das tarefas?"
+        core_lesson: "Divergência na estimativa = divergência no entendimento técnico — discussão é o valor real"
+
+  effectiveness_kpis:
+    - id: "KPI-1"
+      name: "Desvio padrão das estimativas por rodada"
+      measurement: "Cálculo estatístico na Ficha KPI após cada revelação"
+      construct: "Aprendizado (E1.x)"
+    - id: "KPI-2"
+      name: "Tempo médio para consenso (min)"
+      measurement: "Cronômetro por rodada registrado na Ficha KPI"
+      construct: "Confiança (E2.x)"
+
+artifacts:
+  - id: "ART-06A"
+    name: "Baralho Planning Poker"
+    type: PDF
+    path: "DIN-PLAN-001/baralho_planning_poker.pdf"
+  - id: "ART-06B"
+    name: "Guia do Facilitador"
+    type: Markdown
+    path: "DIN-PLAN-001/guia_facilitador.md"
+  - id: "ART-06C"
+    name: "Ficha KPI"
+    type: XLSX
+    path: "DIN-PLAN-001/registro_kpi.xlsx"
+
+quality:
+  validation_status: "Em validação interna"
+  quality_level: "medio"
+  reviewed_by: "Equipe de Agilidade e facilitadores internos"
+  version_history:
+    - version: "1.0.0"
+      date: "2026-05"
+      description: "Versão inicial estruturada em RAS 3.0."
+  references:
+    - "Grenning, J. (2002). Planning Poker or How to Avoid Analysis Paralysis while Release Planning."
+    - "Pozenel, M. et al. (2024). Agile Effort Estimation. arXiv:2401.16152."
+    - "Ju, A. et al. (2021). ICSE 2021, pp.613–623."
+    - "Hause, M. et al. (2025). RAS 3.0. INCOSE INSIGHT, Vol.28/5."

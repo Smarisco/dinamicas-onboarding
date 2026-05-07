@@ -1,0 +1,90 @@
+{
+  "profileType": "onboarding-accessibility",
+  "profileVersion": "OAP-1.0",
+  "assetProfileID": "OAP-DIN-REV-001-v1",
+  "assetID": "DIN-REV-001",
+  "adherenceDate": "2026-05-05",
+
+  "coreRASCompliance": {
+    "classification": true,
+    "solution": true,
+    "usage": true,
+    "relatedAssets": true
+  },
+
+  "pedagogy": {
+    "primaryConstruct": "E1.x + E2.x",
+    "primaryConstructDescription": "Aprendizado (Detecção de Defeitos) + Confiança (Feedback Técnico Construtivo)",
+    "primaryConstructSource": "ICSE 2021 — Tabela III, p.618",
+    "onboardingStrategy": "Problem-Based Learning",
+    "onboardingStrategySource": "ICSE 2021 §III-B3",
+    "methodology": [
+      "Simulacao",
+      "PraticaOrientada"
+    ],
+    "taskComplexity": "medium",
+    "taskComplexityRationale": "Exige atenção a detalhes e habilidades de comunicação construtiva; checklists reduzem carga cognitiva",
+    "independenceMilestone": "Participante identifica defeitos e propõe melhorias sem auxílio, com comentário construtivo",
+    "independenceMilestoneSource": "ICSE 2021 §III-A p.617",
+    "facilitatorSupportLevel": "active",
+    "facilitatorSupportRationale": "Oferece exemplos e feedback sobre qualidade dos comentários"
+  },
+
+  "accessibility": {
+    "visualAdaptations": {
+      "description": "Código com syntax highlighting facilita atenção ao detalhe",
+      "mandatory_adaptations": [
+        "Fornecer código com syntax highlighting (não plain text sem formatação)",
+        "Projetar código com fonte ≥ 14pt para facilitar leitura coletiva"
+      ]
+    },
+    "literalityAdaptations": {
+      "description": "Checklists com categorias fixas eliminam categorização espontânea",
+      "mandatory_adaptations": [
+        "Checklists com categorias explícitas: Bug | Code Smell | Segurança | Performance | Legibilidade",
+        "Gabarito do facilitador disponível ao final — comparação objetiva de cobertura"
+      ]
+    },
+    "predictabilityAdaptations": {
+      "description": "Processo estruturado em 5 passos fixos",
+      "mandatory_adaptations": [
+        "Anunciar estrutura completa antes de começar: ler → identificar → categorizar → comentar → comparar",
+        "Tempo de cada fase exibido no quadro"
+      ]
+    },
+    "sensoryTriggers": [
+      "Pressão de encontrar defeitos que outros encontraram e você não",
+      "Feedback público sobre qualidade dos comentários escritos"
+    ],
+    "inputVariability": [
+      "Revisão individual antes da coletiva (preparo sem exposição)",
+      "Participação escrita (comentários em papel) antes de discussão oral",
+      "Papel de registrador na revisão coletiva"
+    ],
+    "literalLanguage": true,
+    "literalLanguageNote": "Checklists com critérios literais: 'variável não utilizada', 'divisão por zero possível' — sem julgamento subjetivo implícito",
+    "structuralPredictability": true,
+    "structuralPredictabilityNote": "5 fases anunciadas antes; número de defeitos por código anunciado ao final; processo idêntico para cada código"
+  },
+
+  "lineage": {
+    "parentAssetID": null,
+    "lineageType": "root",
+    "assetType": "dinamica_digital",
+    "variants": [
+      {
+        "variantID": "DIN-REV-001-VAR1",
+        "description": "Múltiplas linguagens — Python, JS, Java em código separado"
+      },
+      {
+        "variantID": "DIN-REV-001-VAR2",
+        "description": "Foco em padrões de design — violações de SOLID, DRY, KISS"
+      },
+      {
+        "variantID": "DIN-REV-001-VAR3",
+        "description": "PR real do próprio time anonimizado — para times avançados"
+      }
+    ],
+    "derivedAssets": []
+  }
+}

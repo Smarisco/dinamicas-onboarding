@@ -1,0 +1,94 @@
+{
+  "profileType": "onboarding-accessibility",
+  "profileVersion": "OAP-1.0",
+  "assetProfileID": "OAP-DIN-AGIL-002-v1",
+  "assetID": "DIN-AGIL-002",
+  "adherenceDate": "2026-05-05",
+
+  "coreRASCompliance": {
+    "classification": true,
+    "solution": true,
+    "usage": true,
+    "relatedAssets": true
+  },
+
+  "pedagogy": {
+    "primaryConstruct": "E1.4 + E3.3",
+    "primaryConstructDescription": "Aprendizado (Big Picture) + Socialização (Comunicação entre Equipes)",
+    "primaryConstructSource": "ICSE 2021 — Tabela III, p.618",
+    "onboardingStrategy": "Simple-Complex",
+    "onboardingStrategySource": "ICSE 2021 §III-B1 p.619",
+    "methodology": [
+      "ExperientialLearning",
+      "Construcionismo"
+    ],
+    "taskComplexity": "medium",
+    "taskComplexityRationale": "Coordenação entre times requer negociação de interfaces e leitura de requisitos (§III-B1)",
+    "independenceMilestone": "Equipe integra módulos na primeira tentativa sem facilitador",
+    "independenceMilestoneSource": "ICSE 2021 §III-A p.617",
+    "facilitatorSupportLevel": "active",
+    "facilitatorSupportRationale": "Media conflitos entre equipes — ICSE 2021 §III-A1 p.618"
+  },
+
+  "accessibility": {
+    "auditoryAdaptations": {
+      "description": "Reduzir estímulos sonoros gerados por blocos plásticos ao encaixar e cair",
+      "mandatory_adaptations": [
+        "Utilizar tapetes de feltro nas mesas de cada equipe (reduz impacto acústico dos blocos)",
+        "Comunicação entre equipes preferencialmente por escrito ou desenho antes de verbal"
+      ]
+    },
+    "visualAdaptations": {
+      "description": "Gabarito A3 como âncora visual de previsibilidade do resultado esperado",
+      "mandatory_adaptations": [
+        "Imprimir gabarito A3 e mantê-lo visível para todos após a fase de validação",
+        "Marcar com fita adesiva colorida o espaço de integração no centro da sala"
+      ]
+    },
+    "tactileMotorAdaptations": {
+      "description": "Acomodar sensibilidades motoras finas sem excluir participantes",
+      "mandatory_adaptations": [
+        "Disponibilizar blocos Duplo (maiores) como alternativa para participantes com dificuldades motoras finas"
+      ],
+      "optional_adaptations": [
+        "Versão em papel quadriculado para grupos sem acesso a LEGO®",
+        "Gabarito com pinos identificados por letra/número para evitar ambiguidade espacial"
+      ]
+    },
+    "sensoryTriggers": [
+      "Barulho de blocos plásticos ao encaixar e desencaixar",
+      "Tensão de integração sob pressão de prazo",
+      "Discussões simultâneas entre equipes no espaço central"
+    ],
+    "inputVariability": [
+      "Comunicação por desenhos esquemáticos (sem fala)",
+      "Participação como observador/registrador da ficha KPI",
+      "Participação corporal direta na montagem dos blocos"
+    ],
+    "literalLanguage": true,
+    "literalLanguageNote": "Cartas de restrição e instruções do gabarito são literais — 'este pino vermelho encaixa neste buraco azul', não metáforas de arquitetura",
+    "structuralPredictability": true,
+    "structuralPredictabilityNote": "Gabarito A3 define o resultado esperado; cada equipe conhece exatamente sua responsabilidade modular antes de começar"
+  },
+
+  "lineage": {
+    "parentAssetID": null,
+    "lineageType": "root",
+    "assetType": "dinamica_presencial",
+    "variants": [
+      {
+        "variantID": "DIN-AGIL-002-VAR1",
+        "description": "LEGO Duplo — blocos maiores para acessibilidade motora"
+      },
+      {
+        "variantID": "DIN-AGIL-002-VAR2",
+        "description": "Versão em papel quadriculado — sem peças físicas, acessível sem orçamento LEGO"
+      },
+      {
+        "variantID": "DIN-AGIL-002-VAR3",
+        "description": "Times distribuídos — videoconferência com comunicação apenas por texto/chat"
+      }
+    ],
+    "derivedAssets": []
+  }
+}

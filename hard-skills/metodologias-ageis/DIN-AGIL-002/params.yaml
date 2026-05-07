@@ -1,0 +1,202 @@
+# ═══════════════════════════════════════════════════════
+# params.yaml — DIN-AGIL-002 — Construção com Blocos
+# Especificação: RAS 3.0 (INCOSE INSIGHT Vol.28/5, 2025)
+# ═══════════════════════════════════════════════════════
+
+identification:
+  asset_id: "DIN-AGIL-002"
+  name: "Construção com Blocos (Block Building)"
+  version: "RAS-3.0"
+  repository_path: "hard-skills/metodologias-ageis/DIN-AGIL-002/"
+  author: "Equipe RAS — ras-dinamicas@institucional.br"
+  last_updated: "2026-05-05"
+
+classification:
+  domain: "hard-skills"
+  subdomain: "metodologias-ageis"
+  complexity: "Média"
+  duration_minutes: 35
+  group_size: "9-12"
+  tags:
+    - Scrum
+    - Arquitetura
+    - Integração
+    - LEGO
+    - Onboarding
+  hard_skills:
+    - "Modularização"
+    - "Integração de Componentes"
+    - "Leitura de Requisitos"
+  soft_skills:
+    - "Comunicação Descritiva"
+    - "Negociação de Interfaces"
+    - "Gestão de Frustração"
+  neurodiversity_summary: >
+    A dinâmica utiliza blocos tangíveis (LEGO®/Duplo) que favorecem processamento
+    sensorial-tátil e raciocínio espacial. O gabarito A3 visual reduz ambiguidade
+    interpretativa, atendendo ao princípio de previsibilidade estrutural (ICSE 2021
+    §III-B1, p.619). Tapetes de feltro atenuam estímulos auditivos dos blocos.
+    Blocos Duplo acomodam sensibilidades motoras finas. A estrutura modular
+    (um componente por equipe) reduz carga cognitiva simultânea, alinhada à
+    estratégia Simple-Complex (Ju et al., ICSE 2021).
+  agile_context:
+    methodology: "Scrum"
+    sprint_moment: "inicio"
+    use_scenario:
+      - "Workshops de arquitetura modular"
+      - "Onboarding de times de desenvolvimento"
+      - "Treinamentos de integração de sistemas"
+  target_audience:
+    roles:
+      - "Time de Desenvolvimento"
+      - "Arquiteto de Software"
+      - "Professor de Engenharia de Software"
+      - "Facilitador Scrum"
+    team_size_min: 9
+    team_size_max: 12
+    prerequisites: "nenhum"
+  business_problem: >
+    Falhas de integração por comunicação insuficiente entre subequipes;
+    falta de compreensão da big picture do sistema no onboarding (E1.4).
+
+usage:
+  target_roles:
+    - "Time de Desenvolvimento"
+    - "Arquiteto de Software"
+    - "Professor de Engenharia de Software"
+    - "Facilitador Scrum"
+  prerequisites: []
+  learning_objectives:
+    - "Identificar falhas de integração causadas por comunicação insuficiente entre equipes"
+    - "Praticar negociação de interfaces entre módulos de software"
+    - "Vivenciar a importância da big picture no desenvolvimento modular"
+    - "Aplicar leitura de requisitos para construção correta de componentes"
+  facilitation_level: "Intermediário"
+  accessibility_compliance:
+    - "OAP-1.0"
+
+  duration_minutes:
+    setup: 5
+    product_definition: 5
+    parallel_build: 15
+    integration: 5
+    validation: 5
+    debriefing: 10
+    total: 35
+
+  physical_requirements:
+    space_m2_min: 20
+    layout: "Sala com mesas separadas por equipe; espaço central de integração marcado com fita"
+
+  materials:
+    - item: "Kit LEGO® (separado por equipe)"
+      quantity_min: 3
+    - item: "Gabarito A3 impresso e lacrado"
+      quantity_min: 1
+    - item: "Cartas de restrição (uma por equipe)"
+      quantity_min: 3
+    - item: "Fita adesiva (para marcar espaço de integração)"
+      quantity_min: 1
+    - item: "Cronômetro"
+      quantity_min: 1
+    - item: "Quadro branco + marcador"
+      quantity_min: 1
+
+  scaffolding:
+    steps:
+      - step: 1
+        phase: "Setup"
+        duration_min: 5
+        description: "Separar kits LEGO por equipe. Colocar gabarito A3 lacrado no centro. Marcar espaço de integração com fita."
+      - step: 2
+        phase: "Definição do Produto"
+        duration_min: 5
+        description: "Arquiteto descreve verbalmente o sistema-alvo sem revelar gabarito. Distribuir cartas de restrição."
+      - step: 3
+        phase: "Construção Paralela"
+        duration_min: 15
+        description: "Equipes constroem módulos simultaneamente. Não podem ver as outras equipes. Facilitador observa sem intervir."
+      - step: 4
+        phase: "Integração"
+        duration_min: 5
+        description: "Equipes levam módulos ao espaço central e tentam encaixar na estrutura."
+      - step: 5
+        phase: "Validação"
+        duration_min: 5
+        description: "Gabarito A3 revelado. Comparar resultado real vs. esperado. Registrar na Ficha KPI."
+      - step: 6
+        phase: "Debriefing"
+        duration_min: 10
+        key_question: "Onde ocorreu a falha de integração? Foi falta de comunicação ou requisito ambíguo?"
+        core_lesson: "Big Picture > Otimização local do componente"
+
+  effectiveness_kpis:
+    - id: "KPI-1"
+      name: "Similaridade com gabarito (%)"
+      measurement: "Inspeção visual do resultado vs. gabarito A3"
+      construct: "Aprendizado (E1.4)"
+    - id: "KPI-2"
+      name: "Tempo de integração (s)"
+      measurement: "Cronômetro na fase de integração"
+      construct: "Confiança (E2.1)"
+    - id: "KPI-3"
+      name: "Tentativas de reencaixe"
+      measurement: "Contagem manual na Ficha KPI"
+      construct: "Confiança"
+    - id: "KPI-4"
+      name: "Consultas entre equipes"
+      measurement: "Observador registra número de interações entre equipes"
+      construct: "Socialização (E3.3)"
+
+artifacts:
+  - id: "ART-02A"
+    name: "Imagem Gabarito"
+    type: PDF
+    path: "DIN-AGIL-002/gabarito_estrutura.pdf"
+  - id: "ART-02B"
+    name: "Cartas de Restrição"
+    type: PDF
+    path: "DIN-AGIL-002/cartas_restricao.pdf"
+  - id: "ART-02C"
+    name: "Guia do Facilitador"
+    type: PDF
+    path: "DIN-AGIL-002/guia_facilitador.pdf"
+  - id: "ART-02D"
+    name: "Lista de Peças (Kit)"
+    type: Markdown
+    path: "DIN-AGIL-002/lista_pecas.md"
+  - id: "ART-02E"
+    name: "Customization Guide"
+    type: Markdown
+    path: "DIN-AGIL-002/customization_guide.md"
+  - id: "ART-02F"
+    name: "Ficha KPI"
+    type: XLSX
+    path: "DIN-AGIL-002/registro_kpi.xlsx"
+  - id: "ART-02G"
+    name: "Diagrama de Fluxo Modular"
+    type: PDF
+    path: "DIN-AGIL-002/models/fluxo_modular.pdf"
+
+quality:
+  validation_status: "Em validação interna (pós-graduação e workshops corporativos)"
+  quality_level: "alto"
+  reviewed_by: "Facilitadores CSM/PSM; v1.3.0 auditada 2026-04-28"
+  version_history:
+    - version: "1.0.0"
+      date: "2025-01"
+      description: "Versão inicial."
+    - version: "1.1.0"
+      date: "2026-04"
+      description: "Auditoria RAS v3.1 — customization, params, tags, KPIs."
+    - version: "1.2.0"
+      date: "2026-04"
+      description: "v4.0 — Metadados ICSE 2021."
+    - version: "1.3.0"
+      date: "2026-05"
+      description: "v4.1 — Metadados RAS 3.0 + Profile OAP-1.0."
+  references:
+    - "Steghofer, J.-P. et al. (2017). No silver brick. JSS, v.131, pp.230–247."
+    - "Verwijs, C. (2012). LEGO4SCRUM. https://www.lego4scrum.com."
+    - "Ju, A. et al. (2021). ICSE 2021, pp.613–623."
+    - "Hause, M. et al. (2025). RAS 3.0. INCOSE INSIGHT, Vol.28/5."

@@ -1,0 +1,165 @@
+# ═══════════════════════════════════════════════════════
+# params.yaml — DIN-MAND-001 — Peço, Logo Recebo
+# Especificação: RAS 3.0 (INCOSE INSIGHT Vol.28/5, 2025)
+# ═══════════════════════════════════════════════════════
+
+identification:
+  asset_id: "DIN-MAND-001"
+  name: "Peço, Logo Recebo (Ask and Receive)"
+  version: "RAS-3.0"
+  repository_path: "soft-skills/autoadvocacia/DIN-MAND-001/"
+  author: "Equipe RAS — ras-dinamicas@institucional.br"
+  last_updated: "2026-05-05"
+
+classification:
+  domain: "soft-skills"
+  subdomain: "autoadvocacia"
+  complexity: "Média"
+  duration_minutes: 40
+  group_size: "4-12"
+  tags:
+    - "Autoadvocacia"
+    - "Comunicação Assertiva"
+    - "Autorrevelação Profissional"
+    - "Onboarding"
+  hard_skills: []
+  soft_skills:
+    - "Autoadvocacia"
+    - "Comunicação Assertiva"
+    - "Autorrevelação Profissional"
+  neurodiversity_summary: >
+    A dinâmica disponibiliza Fichas de Recurso com scripts literais de frases assertivas,
+    funcionando como andaime cognitivo para participantes com TEA que têm dificuldade
+    em construir formulações sociais espontâneas (de Marchena et al., 2025). A opção
+    de escrita antes da fala elimina a pressão de comunicação oral em tempo real.
+    Exemplos concretos de pedidos previnem ambiguidade interpretativa. O ambiente
+    estruturado com cenários predefinidos reduz ansiedade social (ICSE 2021 §III-B2).
+  agile_context:
+    methodology: "Comunicação de Time / Onboarding"
+    sprint_moment: "fim"
+    use_scenario:
+      - "Treinamentos de comunicação para times com desafios de assertividade"
+      - "Onboarding de profissionais com alto perfil de ansiedade social"
+      - "Workshops de desenvolvimento pessoal"
+  target_audience:
+    roles:
+      - "Desenvolvedor em Onboarding"
+      - "Qualquer membro de time com dificuldade de assertividade"
+      - "Facilitador de RH"
+    team_size_min: 4
+    team_size_max: 12
+    prerequisites: "nenhum"
+  business_problem: >
+    Passividade e falta de proatividade em pedir ajuda ou expressar opiniões no onboarding.
+    No contexto TEA: dificuldade em autoadvocacia documentada como barreira de integração
+    profissional (de Marchena et al., 2025).
+
+usage:
+  target_roles:
+    - "Desenvolvedor em Onboarding"
+    - "Qualquer membro de time com dificuldade de assertividade"
+    - "Facilitador de RH"
+  prerequisites: []
+  learning_objectives:
+    - "Formular pedidos claros com sujeito + verbo + necessidade específica"
+    - "Distinguir comunicação passiva, agressiva e assertiva"
+    - "Usar scripts como andaime para comunicação assertiva em contexto profissional"
+    - "Aumentar frequência de pedidos de ajuda e esclarecimento no ambiente real"
+  facilitation_level: "Iniciante"
+  accessibility_compliance:
+    - "OAP-1.0"
+
+  duration_minutes:
+    introducao: 5
+    apresentacao_cenarios: 5
+    pratica_rodada_1: 10
+    feedback_coletivo: 5
+    pratica_rodada_2: 10
+    reflexao: 5
+    total: 40
+
+  physical_requirements:
+    space_m2_min: 15
+    layout: "Sala com espaço para movimentação em duplas; quadro branco visível"
+
+  materials:
+    - item: "Cartões de Cenário (ART-05A)"
+      quantity_min: 10
+    - item: "Fichas de Recurso com scripts (ART-05B)"
+      quantity_min: 12
+    - item: "Post-its"
+      quantity_min: 30
+    - item: "Quadro de registro"
+      quantity_min: 1
+    - item: "Canetas/marcadores"
+      quantity_min: 6
+
+  scaffolding:
+    steps:
+      - step: 1
+        phase: "Introdução"
+        duration_min: 5
+        description: "Apresentar conceito de autoadvocacia. Demonstrar contraste passivo vs. assertivo com exemplo concreto."
+      - step: 2
+        phase: "Apresentação de Cenários"
+        duration_min: 5
+        description: "Distribuir Fichas de Recurso. Leitura coletiva de 1 cartão de cenário como exemplo."
+      - step: 3
+        phase: "Prática — Rodada 1"
+        duration_min: 10
+        description: "Participantes praticam em duplas com cartão atribuído. Facilitador observa e registra."
+      - step: 4
+        phase: "Feedback Coletivo"
+        duration_min: 5
+        description: "Grupo compartilha o que tornou cada pedido claro ou ambíguo."
+      - step: 5
+        phase: "Prática — Rodada 2"
+        duration_min: 10
+        description: "Nova rodada com novo cenário, incorporando feedback da rodada 1."
+      - step: 6
+        phase: "Reflexão"
+        duration_min: 5
+        key_question: "Em quais situações reais do trabalho você precisaria usar o que praticou hoje?"
+        core_lesson: "Pedir ajuda clara e diretamente é uma habilidade profissional — não uma fraqueza"
+
+  effectiveness_kpis:
+    - id: "KPI-1"
+      name: "Frequência de pedidos de ajuda/esclarecimento"
+      measurement: "Registro de observação na Ficha KPI durante e após a dinâmica"
+      construct: "Socialização (E3.x)"
+    - id: "KPI-2"
+      name: "Clareza e assertividade da comunicação (1–5)"
+      measurement: "Avaliação do facilitador usando rubrica na Ficha KPI"
+      construct: "Confiança (E2.x)"
+
+artifacts:
+  - id: "ART-05A"
+    name: "Cartões de Cenário"
+    type: PDF
+    path: "DIN-MAND-001/cenarios_assertividade.pdf"
+  - id: "ART-05B"
+    name: "Fichas de Recurso (scripts)"
+    type: PDF
+    path: "DIN-MAND-001/fichas_recurso.pdf"
+  - id: "ART-05C"
+    name: "Guia do Facilitador"
+    type: Markdown
+    path: "DIN-MAND-001/guia_facilitador.md"
+  - id: "ART-05D"
+    name: "Ficha KPI"
+    type: XLSX
+    path: "DIN-MAND-001/registro_kpi.xlsx"
+
+quality:
+  validation_status: "Em validação interna"
+  quality_level: "medio"
+  reviewed_by: "Equipe de RH e facilitadores internos"
+  version_history:
+    - version: "1.0.0"
+      date: "2026-05"
+      description: "Versão inicial estruturada em RAS 3.0."
+  references:
+    - "Skinner, B.F. (1957). Verbal Behavior. Appleton-Century-Crofts."
+    - "de Marchena, A. et al. (2025). Communication in Autistic Adults. Current Psychiatry Reports."
+    - "Ju, A. et al. (2021). ICSE 2021, pp.613–623."
+    - "Hause, M. et al. (2025). RAS 3.0. INCOSE INSIGHT, Vol.28/5."

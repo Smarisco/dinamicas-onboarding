@@ -1,0 +1,95 @@
+{
+  "profileType": "onboarding-accessibility",
+  "profileVersion": "OAP-1.0",
+  "assetProfileID": "OAP-DIN-MAND-001-v1",
+  "assetID": "DIN-MAND-001",
+  "adherenceDate": "2026-05-05",
+
+  "coreRASCompliance": {
+    "classification": true,
+    "solution": true,
+    "usage": true,
+    "relatedAssets": true
+  },
+
+  "pedagogy": {
+    "primaryConstruct": "E3.x + E2.x",
+    "primaryConstructDescription": "Socialização (Autoadvocacia e Integração) + Confiança (Expressão de Necessidades)",
+    "primaryConstructSource": "ICSE 2021 — Tabela III, p.618",
+    "onboardingStrategy": "Role-Playing",
+    "onboardingStrategySource": "ICSE 2021 §III-B2",
+    "methodology": [
+      "ExperientialLearning",
+      "RolePlaying"
+    ],
+    "taskComplexity": "medium",
+    "taskComplexityRationale": "Exige auto-reflexão e prática de assertividade; scripts reduzem complexidade para perfis com TEA",
+    "independenceMilestone": "Participante formula pedido assertivo sem consultar script e sem auxílio do facilitador",
+    "independenceMilestoneSource": "de Marchena et al. (2025); ICSE 2021 §III-A p.617",
+    "facilitatorSupportLevel": "active",
+    "facilitatorSupportRationale": "Oferece feedback sobre assertividade após cada prática"
+  },
+
+  "accessibility": {
+    "socialCommunicationAdaptations": {
+      "description": "Scripts de frases como andaime cognitivo para formulação de pedidos",
+      "mandatory_adaptations": [
+        "Disponibilizar Fichas de Recurso (ART-05B) com scripts antes de qualquer prática oral",
+        "Permitir ensaio escrito completo antes de verbalizar — sem prazo para escrita"
+      ]
+    },
+    "auditoryAdaptations": {
+      "description": "Prática em duplas separadas reduz ruído concorrente",
+      "mandatory_adaptations": [
+        "Organizar duplas com distância física suficiente para não sobrepor vozes"
+      ]
+    },
+    "anxietySocialAdaptations": {
+      "description": "Múltiplos níveis de participação para diferentes perfis de ansiedade",
+      "mandatory_adaptations": [
+        "Oferecer opção de prática escrita completa (post-its) para participantes com ansiedade social alta",
+        "Não exigir contato visual durante a prática"
+      ],
+      "optional_adaptations": [
+        "Prática individual com facilitador antes de ir para dupla",
+        "Opção de observar outra dupla antes de praticar"
+      ]
+    },
+    "sensoryTriggers": [
+      "Pressão de formular resposta verbal em tempo real",
+      "Feedback público sobre qualidade da comunicação",
+      "Incerteza sobre o que dizer sem script"
+    ],
+    "inputVariability": [
+      "Prática via post-its (sem fala oral)",
+      "Prática escrita antes da fala",
+      "Participação como observador e registrador",
+      "Uso de scripts literais (Fichas de Recurso)"
+    ],
+    "literalLanguage": true,
+    "literalLanguageNote": "Fichas de Recurso fornecem frases literais modelo: 'Preciso de ajuda com X porque Y' — não metáforas ou formatos implícitos",
+    "structuralPredictability": true,
+    "structuralPredictabilityNote": "6 fases anunciadas antes de começar; cartões de cenário predefinidos eliminam improvisação; scripts disponíveis em todos os momentos"
+  },
+
+  "lineage": {
+    "parentAssetID": null,
+    "lineageType": "root",
+    "assetType": "dinamica_presencial",
+    "variants": [
+      {
+        "variantID": "DIN-MAND-001-VAR1",
+        "description": "Cenários específicos da empresa — substituir cartões genéricos por situações reais do time"
+      },
+      {
+        "variantID": "DIN-MAND-001-VAR2",
+        "description": "Prática em trios — adicionar papel de observador"
+      },
+      {
+        "variantID": "DIN-MAND-001-VAR3",
+        "description": "Versão escrita total — toda prática via post-its sem fala oral"
+      }
+    ],
+    "derivedAssets": []
+  }
+}

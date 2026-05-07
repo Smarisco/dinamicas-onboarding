@@ -1,0 +1,169 @@
+# ═══════════════════════════════════════════════════════
+# params.yaml — DIN-PSAF-001 — Termômetro Psicológico
+# Especificação: RAS 3.0 (INCOSE INSIGHT Vol.28/5, 2025)
+# ═══════════════════════════════════════════════════════
+
+identification:
+  asset_id: "DIN-PSAF-001"
+  name: "Termômetro Psicológico"
+  version: "RAS-3.0"
+  repository_path: "soft-skills/seguranca-psicologica/DIN-PSAF-001/"
+  author: "Equipe RAS — ras-dinamicas@institucional.br"
+  last_updated: "2026-05-05"
+
+classification:
+  domain: "soft-skills"
+  subdomain: "seguranca-psicologica"
+  complexity: "Baixa"
+  duration_minutes: 40
+  group_size: "3-10"
+  tags:
+    - "Segurança Psicológica"
+    - "Vulnerabilidade Profissional"
+    - "Autorregulação"
+    - "Comunicação Social"
+    - "Ansiedade Social"
+    - "Previsibilidade"
+    - "Onboarding"
+  hard_skills: []
+  soft_skills:
+    - "Segurança Psicológica"
+    - "Vulnerabilidade Profissional"
+    - "Autorregulação"
+  neurodiversity_summary: >
+    Fichas anônimas eliminam completamente a necessidade de verbalizar nível de conforto —
+    participante marca o número em papel sem exposição. A escala visual 1–5 com descrição
+    literal de cada nível elimina ambiguidade sobre o significado de cada ponto. A opção
+    de contribuir para a discussão por escrito (post-it) em vez de verbalmente reduz
+    pressão de comunicação social. O termômetro visual no quadro oferece referência espacial
+    concreta que facilita cognição literal.
+  agile_context:
+    methodology: "Soft Skills / Clima de Equipe"
+    sprint_moment: "fim"
+    use_scenario:
+      - "Reuniões de equipe e check-ins periódicos"
+      - "Workshops de segurança psicológica"
+      - "Consolidação de onboarding"
+  target_audience:
+    roles:
+      - "Desenvolvedor"
+      - "Scrum Master"
+      - "Product Owner"
+      - "QA / Tester"
+      - "Qualquer membro de time"
+    team_size_min: 3
+    team_size_max: 10
+    prerequisites: "Nenhuma experiência prévia necessária"
+  business_problem: >
+    Medo de expressar opiniões; falta de confiança para errar ou pedir ajuda.
+    No onboarding: dificuldade em se sentir seguro para contribuir ativamente (E2.x — ICSE 2021).
+
+usage:
+  target_roles:
+    - "Desenvolvedor"
+    - "Scrum Master"
+    - "Product Owner"
+    - "QA / Tester"
+  prerequisites:
+    - "Nenhuma experiência prévia necessária"
+  learning_objectives:
+    - "Medir nível atual de segurança psicológica individual e coletiva"
+    - "Identificar barreiras que impedem contribuição plena"
+    - "Construir acordos de convivência concretos para aumentar segurança"
+    - "Desenvolver cultura de vulnerabilidade profissional segura"
+  facilitation_level: "Intermediário"
+  accessibility_compliance:
+    - "OAP-1.0"
+
+  duration_minutes:
+    briefing: 10
+    anonymous_marking: 5
+    consolidation: 5
+    collective_discussion: 15
+    closing: 5
+    total: 40
+
+  physical_requirements:
+    space_m2_min: 12
+    layout: "Sala de reunião com quadro branco visível a todos"
+
+  materials:
+    - item: "Fichas anônimas (papel pequeno)"
+      quantity_min: 10
+    - item: "Quadro de termômetro visual (PDF impresso ou desenhado no quadro)"
+      quantity_min: 1
+    - item: "Marcadores"
+      quantity_min: 4
+    - item: "Post-its para contribuições escritas na discussão"
+      quantity_min: 20
+
+  scaffolding:
+    rules:
+      - "Anonimato é obrigatório — ninguém identifica sua ficha; facilitador não revela números individuais"
+      - "Discussão foca em barreiras coletivas — não em julgamento de pessoas"
+      - "Acordos são voluntários e registrados visivelmente para próximos check-ins"
+      - "Resultados do termômetro não são usados para avaliação de desempenho"
+    steps:
+      - step: 1
+        phase: "Briefing e Contexto"
+        duration_min: 10
+        description: "Explicar segurança psicológica (Edmondson 1999) com exemplos concretos; mostrar escala 1–5; garantir anonimato."
+      - step: 2
+        phase: "Marcação Anônima"
+        duration_min: 5
+        description: "Distribuir fichas; cada participante escreve apenas o número; facilitador recolhe sem olhar."
+      - step: 3
+        phase: "Consolidação Visual"
+        duration_min: 5
+        description: "Facilitador marca pontos no termômetro no quadro (sem identificar). Calcular média e desvio padrão."
+      - step: 4
+        phase: "Discussão Coletiva"
+        duration_min: 15
+        description: "Facilitar discussão sobre barreiras; participantes podem contribuir verbalmente ou por post-it."
+      - step: 5
+        phase: "Encerramento"
+        duration_min: 5
+        key_question: "O que a equipe se compromete a fazer diferente para aumentar a segurança psicológica?"
+        core_lesson: "Segurança psicológica é construída por comportamentos consistentes — não por declarações"
+
+  effectiveness_kpis:
+    - id: "KPI-1"
+      name: "Média do nível de segurança psicológica"
+      measurement: "ART-12D — cálculo da média das fichas anônimas"
+      construct: "Confiança (E2.x)"
+    - id: "KPI-2"
+      name: "Variação do nível de segurança psicológica"
+      measurement: "ART-12D — desvio padrão entre sessões (evolução ao longo do tempo)"
+      construct: "Confiança (E2.x)"
+
+artifacts:
+  - id: "ART-12A"
+    name: "Quadro de Termômetro Visual"
+    type: PDF
+    path: "DIN-PSAF-001/termometro_visual.pdf"
+  - id: "ART-12B"
+    name: "Fichas Anônimas"
+    type: PDF
+    path: "DIN-PSAF-001/fichas_anonimas.pdf"
+  - id: "ART-12C"
+    name: "Guia do Facilitador"
+    type: Markdown
+    path: "DIN-PSAF-001/guia_facilitador.md"
+  - id: "ART-12D"
+    name: "Ficha KPI"
+    type: XLSX
+    path: "DIN-PSAF-001/registro_kpi.xlsx"
+
+quality:
+  validation_status: "Em validação interna"
+  quality_level: "medio"
+  reviewed_by: "Equipe de RH e facilitadores internos"
+  version_history:
+    - version: "1.0.0"
+      date: "2026-05"
+      description: "Versão inicial estruturada em RAS 3.0."
+  references:
+    - "Edmondson, A. (1999). Psychological Safety and Learning Behavior in Work Teams. Administrative Science Quarterly."
+    - "Tkalich, A. et al. (2024). The Role of Psychological Safety in Promoting Software Quality in Agile Teams. Empirical Software Engineering."
+    - "Ju, A. et al. (2021). ICSE 2021, pp.613–623."
+    - "Hause, M. et al. (2025). RAS 3.0. INCOSE INSIGHT, Vol.28/5."
